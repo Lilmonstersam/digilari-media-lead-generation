@@ -9,6 +9,7 @@
 .dig-nav-top { display: flex; align-items: center; gap: 3px; }
 .dig-nav-top > a, .dig-nav-top > button, .dig-nav-direct { color: #211b29; text-decoration: none; font: 700 15px/1.2 "Red Hat Display", sans-serif; white-space: nowrap; }
 .dig-nav-top > a:hover, .dig-nav-top > button:hover, .dig-nav-direct:hover, .dig-nav-top > a[aria-current="page"], .dig-submenu a[aria-current="page"] { color: #e41b6f; }
+.dig-header .dig-nav-top > a:hover, .dig-header .dig-nav-top > button:hover, .dig-header .dig-nav-direct:hover { color: #e41b6f !important; }
 .dig-nav-top > button { border: 0; background: transparent; padding: 7px 1px 7px 4px; cursor: pointer; }
 .dig-nav-top > button.dig-nav-label { display: flex; align-items: center; gap: 7px; padding-left: 0; }
 .dig-nav-top > button svg { width: 13px; height: 13px; stroke: currentColor; stroke-width: 2.5; fill: none; transition: transform .2s; }
@@ -33,10 +34,12 @@ body.elementor-page-18955 .site-content :is(p, li, td, th, label, input, textare
 body.elementor-page-18955 .site-content :is(p, li) { line-height: 1.65; }
 body.elementor-page-18955 .site-content :is(h1, h2, h3, h4, h5) { font-family: "Red Hat Display", "Trebuchet MS", sans-serif !important; letter-spacing: -.035em; }
 body.elementor-page-18955 .page-header.dlg-compact-header .page-title { font-size: clamp(30px, 3vw, 42px) !important; font-weight: 800; line-height: 1.12; }
-body.elementor-page-18955 .elementor-element-4bd13d5 h2 { font-size: clamp(48px, 5vw, 77px) !important; font-weight: 900 !important; line-height: 1.02 !important; letter-spacing: -.045em; }
+body.elementor-page-18955 .elementor-element-4bd13d5 h2 { color: #211b29 !important; font-size: clamp(48px, 5vw, 77px) !important; font-weight: 900 !important; line-height: 1.02 !important; letter-spacing: -.045em; }
+body.elementor-page-18955 .elementor-element-4bd13d5 h2 em { color: #e41b6f; font-style: normal; }
 body.elementor-page-18955 .elementor-element-c7fe01a p { font-size: clamp(17px, 1.5vw, 19px) !important; line-height: 1.7 !important; }
 body.elementor-page-18955 .site-content .custom-form-wrapper { padding: clamp(24px, 3vw, 38px) !important; border: 1px solid #e7dfe5; border-radius: 20px; background: #fbf8f5; box-shadow: 0 22px 55px rgba(33,27,41,.1); }
-body.elementor-page-18955 .site-content .custom-form-wrapper h2 { color: #211b29 !important; font-size: clamp(29px, 2.7vw, 42px) !important; font-weight: 800 !important; line-height: 1.12 !important; letter-spacing: -.035em; text-align: left !important; }
+body.elementor-page-18955 .site-content .custom-form-wrapper > .elementor-widget-container { padding: 0 !important; border-radius: 0; box-shadow: none !important; }
+body.elementor-page-18955 .site-content .custom-form-wrapper h2 { color: #211b29 !important; font-size: clamp(30px, 3vw, 42px) !important; font-weight: 800 !important; line-height: 1.12 !important; letter-spacing: -.035em; text-align: left !important; }
 body.elementor-page-18955 .site-content .custom-form-wrapper .elementor-widget-container > p { color: #514955; font-size: 15px !important; line-height: 1.6; text-align: left !important; }
 body.elementor-page-18955 .site-content .custom-form-wrapper .wpcf7 input:not([type="hidden"]) { min-height: 47px; padding: 10px 12px; border: 1px solid #cfc5cc; border-radius: 8px; background: #fff; color: #211b29; font-size: 15px !important; }
 body.elementor-page-18955 .site-content .custom-form-wrapper .wpcf7 input:focus { border-color: #e41b6f; outline: 2px solid rgba(228,27,111,.22); outline-offset: 1px; }
