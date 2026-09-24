@@ -2438,6 +2438,148 @@ html,body{overflow-x:clip !important;overflow-y:visible !important}
 .dlg-case2 p.dlg-case2-tag{font-size:12px;line-height:1.4;text-transform:uppercase;letter-spacing:.1em;font-weight:700;color:var(--dlg-orange);margin:0 0 6px}
 .dlg-case2 p.dlg-case2-note{font-size:12px;color:#9a9ea5;margin:10px 0 14px}
 .dlg-btn-row .octf-btn,.dlg-btn-row.dlg-center .octf-btn{margin-top:0 !important}
+/* Keep the header in flow and sticky at every viewport width. */
+header.elementor-location-header{
+  position:sticky;
+  top:0;
+  z-index:999;
+}
+@media (max-width:1024px){
+  body{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+  .elementor-17569 .elementor-element.elementor-element-7c449cf{
+    width:100% !important;
+    left:0 !important;
+    right:0 !important;
+  }
+  .elementor-17569 .elementor-element.elementor-element-7c449cf.elementor-sticky__spacer{
+    display:none !important;
+  }
+  .elementor-17569 .elementor-element.elementor-element-1b1a628 .elementor-nav-menu__container.elementor-nav-menu--dropdown{
+    position:fixed !important;
+    width:100vw !important;
+    max-width:100vw;
+    top:80px !important;
+    left:0 !important;
+    right:0 !important;
+    overflow-y:auto;
+  }
+  .elementor-17569 .elementor-menu-toggle.elementor-active + .elementor-nav-menu__container.elementor-nav-menu--dropdown{
+    max-height:calc(100dvh - 80px) !important;
+    transform:scaleY(1);
+  }
+}
+@media (min-width:768px) and (max-width:1024px){
+  .elementor-18955 .elementor-element.elementor-element-0fa5699{
+    --margin-top:56px;
+    --padding-top:60px;
+    --padding-bottom:60px;
+  }
+  .elementor-18955 .elementor-element.elementor-element-0fa5699 > .e-con-inner{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:54px 24px;
+  }
+  .elementor-18955 .elementor-element.elementor-element-0fa5699 > .e-con-inner > .e-con{
+    --width:100%;
+    --margin-top:0px;
+    --margin-bottom:0px;
+    width:100%;
+    margin:0;
+  }
+}
+@media (max-width:767px){
+  .elementor-17569 .elementor-element.elementor-element-5e656f2,
+  .elementor-17569 .elementor-element.elementor-element-7c449cf{
+    --min-height:72px;
+  }
+  .elementor-17569 .elementor-element.elementor-element-d5003a2 > .e-con-inner{
+    display:flex;
+    flex-wrap:nowrap;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .elementor-17569 .elementor-element.elementor-element-c21776e{
+    --width:auto;
+    flex:0 1 130px;
+    min-width:0;
+  }
+  .elementor-17569 .elementor-element.elementor-element-e99b21b img{
+    width:100%;
+    max-width:130px;
+    height:auto;
+  }
+  .elementor-17569 .elementor-element.elementor-element-31e92c6{
+    --width:auto;
+    flex:0 0 auto;
+    min-width:44px;
+  }
+  .elementor-17569 .elementor-element.elementor-element-2bb6785{
+    display:none;
+  }
+  .elementor-17569 .elementor-element.elementor-element-1b1a628 .elementor-menu-toggle{
+    min-width:44px;
+    min-height:44px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .elementor-17569 .elementor-element.elementor-element-1b1a628 .elementor-menu-toggle i{
+    display:none;
+  }
+  .elementor-17569 .elementor-element.elementor-element-1b1a628 .elementor-menu-toggle::before{
+    content:"";
+    display:block;
+    width:24px;
+    height:18px;
+    background:linear-gradient(currentColor,currentColor) 0 0/100% 2px no-repeat,
+               linear-gradient(currentColor,currentColor) 0 8px/100% 2px no-repeat,
+               linear-gradient(currentColor,currentColor) 0 16px/100% 2px no-repeat;
+  }
+  .elementor-17569 .elementor-element.elementor-element-1b1a628 .elementor-menu-toggle.elementor-active::before{
+    content:"×";
+    width:24px;
+    height:24px;
+    background:none;
+    font:30px/20px sans-serif;
+    text-align:center;
+  }
+  .elementor-17569 .elementor-element.elementor-element-1b1a628 .elementor-nav-menu__container.elementor-nav-menu--dropdown{
+    top:72px !important;
+  }
+  .elementor-17569 .elementor-menu-toggle.elementor-active + .elementor-nav-menu__container.elementor-nav-menu--dropdown{
+    max-height:calc(100dvh - 72px) !important;
+  }
+  .elementor-18955 .elementor-element.elementor-element-0fa5699{
+    --margin-top:36px;
+    --margin-bottom:0px;
+    --padding-top:54px;
+    --padding-bottom:54px;
+  }
+  .elementor-18955 .elementor-element.elementor-element-0fa5699 > .e-con-inner{
+    display:flex;
+    flex-direction:column;
+    gap:48px;
+  }
+  .elementor-18955 .elementor-element.elementor-element-0fa5699 > .e-con-inner > .e-con{
+    --width:100%;
+    --margin-top:0px;
+    --margin-bottom:0px;
+    width:100%;
+    margin:0;
+  }
+  .elementor-18955 .elementor-element.elementor-element-0fa5699 .process-box{
+    max-width:none;
+    padding:50px 24px 28px;
+    box-shadow:none;
+  }
+  .elementor-18955 .elementor-element.elementor-element-0fa5699 .process-box .icon-main:empty{
+    display:none;
+  }
+  .elementor-18955 .elementor-element.elementor-element-0fa5699 .process-box-title{
+    font-size:21px;
+    line-height:1.25;
+  }
+}
 </style><style>chat-widget,#lc_text-widget,.lc_text-widget{display:none !important}</style></head>
 <body class="wp-singular page-template-default page page-id-18955 wp-custom-logo wp-theme-onum ally-default elementor-default elementor-kit-242 elementor-page elementor-page-18955 e--ua-blink e--ua-chrome e--ua-mac e--ua-webkit" cz-shortcut-listen="true" data-elementor-device-mode="desktop" data-rsssl="1">
 <noscript>
@@ -2474,80 +2616,7 @@ html,body{overflow-x:clip !important;overflow-y:visible !important}
 <div class="site" id="page">
 <header class="elementor elementor-17569 elementor-location-header" data-elementor-id="17569" data-elementor-post-type="elementor_library" data-elementor-type="header">
 <div class="elementor-element elementor-element-5e656f2 e-con-full e-flex e-con e-parent e-lazyloaded" data-e-type="container" data-element_type="container" data-id="5e656f2" data-settings='{"background_background":"classic"}'>
-<div class="elementor-element elementor-element-7c449cf e-con-full e-flex e-con e-child elementor-sticky elementor-sticky--active elementor-section--handles-inside elementor-sticky--effects" data-e-type="container" data-element_type="container" data-id="7c449cf" data-settings='{"background_background":"classic","sticky":"top","sticky_on":["desktop","tablet","mobile"],"sticky_offset":0,"sticky_effects_offset":0,"sticky_anchor_link_offset":0}' style="position: fixed; width: 1512px; margin-top: 0px; margin-bottom: 0px;">
-<div class="elementor-element elementor-element-d5003a2 e-flex e-con-boxed e-con e-child" data-e-type="container" data-element_type="container" data-id="d5003a2">
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-c21776e e-con-full e-flex e-con e-child" data-e-type="container" data-element_type="container" data-id="c21776e">
-<div class="elementor-element elementor-element-e99b21b main-logo elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-e-type="widget" data-element_type="widget" data-id="e99b21b" data-widget_type="theme-site-logo.default">
-<div class="elementor-widget-container">
-<a href="https://digilari.com.au/">
-<img alt="Digilari Media Logo, Brisbane Digital Marketing Agency" class="attachment-full size-full wp-image-2939" height="150" src="./assets/dig-logo-c5.png" width="286"/> </a>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-31e92c6 e-con-full e-flex e-con e-child elementor-sticky" data-e-type="container" data-element_type="container" data-id="31e92c6" data-settings='{"background_background":"classic","sticky":"top","sticky_on":["desktop","tablet","mobile"],"sticky_offset":0,"sticky_effects_offset":0,"sticky_anchor_link_offset":0}'>
-<div class="elementor-element elementor-element-1b1a628 elementor-nav-menu--stretch elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-e-type="widget" data-element_type="widget" data-id="1b1a628" data-settings='{"submenu_icon":{"value":"&lt;i class=\"fas fa-angle-down\" aria-hidden=\"true\"&gt;&lt;\/i&gt;","library":"fa-solid"},"full_width":"stretch","layout":"horizontal","toggle":"burger"}' data-widget_type="nav-menu.default">
-<div class="elementor-widget-container">
-<nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
-<ul class="elementor-nav-menu" data-smartmenus-id="17902129063881028" id="menu-1-1b1a628"><li class="menu-item menu-item-has-children current-menu-ancestor"><a aria-expanded="false" aria-haspopup="true" class="elementor-item has-submenu" href="#">Services<span class="sub-arrow"><i aria-hidden="true" class="fas fa-angle-down"></i></span></a><ul class="sub-menu elementor-nav-menu--dropdown" role="group"><li class="menu-item current-menu-item"><a aria-current="page" class="elementor-sub-item elementor-item-active" href="https://digilari.com.au/lead-generation/">Lead Generation</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/account-based-marketing/">Account-Based Marketing (ABM)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/paid-search/">Google Ads Management (PPC)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/seo-agency-brisbane/">Search Engine Optimisation (SEO)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/generative-engine-optimisation-geo-services/">Generative Engine Optimisation (GEO)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/conversion-rate-optimisation/">Conversion Rate Optimisation</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/email-marketing/">Email Marketing (EDM)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/social-media-marketing-smm/">Social Media Marketing</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/inbound-and-content-marketing/">Inbound &amp; Content Marketing</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/website-seo-migration-support/">Website SEO Migration Support</a></li></ul></li><li class="menu-item menu-item-has-children"><a aria-expanded="false" aria-haspopup="true" class="elementor-item has-submenu" href="https://digilari.com.au/core-industry-sector-digital-marketing/">Industries<span class="sub-arrow"><i aria-hidden="true" class="fas fa-angle-down"></i></span></a><ul class="sub-menu elementor-nav-menu--dropdown" role="group"><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/construction-marketing-agency/">Construction</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/manufacturing-marketing-agency/">Manufacturing</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/mining-marketing-agency/">Mining</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/logistics-marketing-agency/">Logistics</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/agricultural-marketing-agency/">Agricultural</a></li></ul></li><li class="menu-item"><a class="elementor-item" href="https://digilari.com.au/case-studies/">Case Studies</a></li><li class="menu-item"><a class="elementor-item" href="https://digilari.com.au/our-pricing/">Pricing</a></li><li class="menu-item menu-item-has-children"><a aria-expanded="false" aria-haspopup="true" class="elementor-item has-submenu" href="https://digilari.com.au/why-digilari/">About<span class="sub-arrow"><i aria-hidden="true" class="fas fa-angle-down"></i></span></a><ul class="sub-menu elementor-nav-menu--dropdown" role="group"><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/why-digilari/">Why Digilari</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/why-digilari/#meet-the-team">Meet The Team</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/digital-results-guarantee-performance-marketing/">Digital Results Guarantee (DRG)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/articles/digital-marketing-partner-program/">Digital Partner Program (DPP)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/join-us/">Join Us</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/contact-us/">Contact Us</a></li></ul></li><li class="menu-item menu-item-has-children"><a aria-expanded="false" aria-haspopup="true" class="elementor-item has-submenu" href="https://digilari.com.au/articles/">Resources<span class="sub-arrow"><i aria-hidden="true" class="fas fa-angle-down"></i></span></a><ul class="sub-menu elementor-nav-menu--dropdown" role="group"><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/articles/">Articles</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/articles/digital-agency-costs/">Digital Marketing Cost Guide 2026</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/articles/marketing-terms/">Glossary of Digital Marketing Terms</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/faqs/">FAQs</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/digilari-scholarship/">Digilari University Scholarship</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/digital-marketing-course/">Marketing Training Program</a></li></ul></li></ul> </nav>
-<div aria-expanded="false" aria-label="Menu Toggle" class="elementor-menu-toggle" role="button" style="" tabindex="0">
-<i aria-hidden="true" class="elementor-menu-toggle__icon--open eicon-menu-bar" role="presentation"></i><i aria-hidden="true" class="elementor-menu-toggle__icon--close eicon-close" role="presentation"></i> </div>
-<nav aria-hidden="true" class="elementor-nav-menu--dropdown elementor-nav-menu__container" style="width: 1512px; left: 0px; top: 52.25px; --menu-height: 0;">
-<ul class="elementor-nav-menu" data-smartmenus-id="17902129063894595" id="menu-2-1b1a628"><li class="menu-item menu-item-has-children current-menu-ancestor"><a aria-expanded="false" aria-haspopup="true" class="elementor-item has-submenu" href="#">Services<span class="sub-arrow"><i aria-hidden="true" class="fas fa-angle-down"></i></span></a><ul class="sub-menu elementor-nav-menu--dropdown" role="group"><li class="menu-item current-menu-item"><a aria-current="page" class="elementor-sub-item elementor-item-active" href="https://digilari.com.au/lead-generation/">Lead Generation</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/account-based-marketing/">Account-Based Marketing (ABM)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/paid-search/">Google Ads Management (PPC)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/seo-agency-brisbane/">Search Engine Optimisation (SEO)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/generative-engine-optimisation-geo-services/">Generative Engine Optimisation (GEO)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/conversion-rate-optimisation/">Conversion Rate Optimisation</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/email-marketing/">Email Marketing (EDM)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/social-media-marketing-smm/">Social Media Marketing</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/inbound-and-content-marketing/">Inbound &amp; Content Marketing</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/website-seo-migration-support/">Website SEO Migration Support</a></li></ul></li><li class="menu-item menu-item-has-children"><a aria-expanded="false" aria-haspopup="true" class="elementor-item has-submenu" href="https://digilari.com.au/core-industry-sector-digital-marketing/">Industries<span class="sub-arrow"><i aria-hidden="true" class="fas fa-angle-down"></i></span></a><ul class="sub-menu elementor-nav-menu--dropdown" role="group"><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/construction-marketing-agency/">Construction</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/manufacturing-marketing-agency/">Manufacturing</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/mining-marketing-agency/">Mining</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/logistics-marketing-agency/">Logistics</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/agricultural-marketing-agency/">Agricultural</a></li></ul></li><li class="menu-item"><a class="elementor-item" href="https://digilari.com.au/case-studies/">Case Studies</a></li><li class="menu-item"><a class="elementor-item" href="https://digilari.com.au/our-pricing/">Pricing</a></li><li class="menu-item menu-item-has-children"><a aria-expanded="false" aria-haspopup="true" class="elementor-item has-submenu" href="https://digilari.com.au/why-digilari/">About<span class="sub-arrow"><i aria-hidden="true" class="fas fa-angle-down"></i></span></a><ul class="sub-menu elementor-nav-menu--dropdown" role="group"><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/why-digilari/">Why Digilari</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/why-digilari/#meet-the-team">Meet The Team</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/digital-results-guarantee-performance-marketing/">Digital Results Guarantee (DRG)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/articles/digital-marketing-partner-program/">Digital Partner Program (DPP)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/join-us/">Join Us</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/contact-us/">Contact Us</a></li></ul></li><li class="menu-item menu-item-has-children"><a aria-expanded="false" aria-haspopup="true" class="elementor-item has-submenu" href="https://digilari.com.au/articles/">Resources<span class="sub-arrow"><i aria-hidden="true" class="fas fa-angle-down"></i></span></a><ul class="sub-menu elementor-nav-menu--dropdown" role="group"><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/articles/">Articles</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/articles/digital-agency-costs/">Digital Marketing Cost Guide 2026</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/articles/marketing-terms/">Glossary of Digital Marketing Terms</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/faqs/">FAQs</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/digilari-scholarship/">Digilari University Scholarship</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/digital-marketing-course/">Marketing Training Program</a></li></ul></li></ul> </nav>
-</div>
-</div>
-<div class="elementor-element elementor-element-2bb6785 e-con-full elementor-hidden-desktop e-flex e-con e-child" data-e-type="container" data-element_type="container" data-id="2bb6785">
-<div class="elementor-element elementor-element-4b64208 elementor-view-stacked elementor-shape-circle elementor-widget elementor-widget-icon" data-e-type="widget" data-element_type="widget" data-id="4b64208" data-widget_type="icon.default">
-<div class="elementor-widget-container">
-<div class="elementor-icon-wrapper">
-<a aria-label="Free lead audit" class="elementor-icon" href="#audit"><i aria-hidden="true" class="fas fa-clipboard-check"></i></a>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-5d323e2 elementor-view-stacked elementor-shape-circle elementor-widget elementor-widget-icon" data-e-type="widget" data-element_type="widget" data-id="5d323e2" data-widget_type="icon.default">
-<div class="elementor-widget-container">
-<div class="elementor-icon-wrapper">
-<a class="elementor-icon" href="https://digilari.com.au/contact-us/">
-<i aria-hidden="true" class="far fa-envelope"></i> </a>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-570248f elementor-view-stacked elementor-shape-circle elementor-widget elementor-widget-icon" data-e-type="widget" data-element_type="widget" data-id="570248f" data-widget_type="icon.default">
-<div class="elementor-widget-container">
-<div class="elementor-icon-wrapper">
-<a class="elementor-icon" href="tel:1300859358">
-<i aria-hidden="true" class="fas fa-phone-alt"></i> </a>
-</div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-aeeaeaa elementor-view-stacked elementor-position-inline-start elementor-hidden-tablet elementor-hidden-mobile elementor-shape-circle elementor-mobile-position-block-start elementor-widget elementor-widget-icon-box" data-e-type="widget" data-element_type="widget" data-id="aeeaeaa" data-widget_type="icon-box.default">
-<div class="elementor-widget-container">
-<div class="elementor-icon-box-wrapper">
-<div class="elementor-icon-box-icon">
-<a aria-label="1300 859 358" class="elementor-icon" href="tel:1300%20859%20358" tabindex="-1">
-<i aria-hidden="true" class="fas fa-phone-alt"></i> </a>
-</div>
-<div class="elementor-icon-box-content">
-<span class="elementor-icon-box-title">
-<a href="tel:1300%20859%20358">
-							1300 859 358						</a>
-</span>
-</div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-7f2856d elementor-align-right elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-ibutton" data-e-type="widget" data-element_type="widget" data-id="7f2856d" data-widget_type="ibutton.default">
-<div class="elementor-widget-container">
-<div class="ot-button">
-<a class="octf-btn octf-btn-third octf-btn-no-icon" href="#audit"><span>Free Lead Audit <i class="flaticon-right-arrow-1"></i></span></a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="elementor-element elementor-element-7c449cf e-con-full e-flex e-con e-child elementor-sticky elementor-sticky__spacer" data-e-type="container" data-element_type="container" data-id="7c449cf" data-settings='{"background_background":"classic","sticky":"top","sticky_on":["desktop","tablet","mobile"],"sticky_offset":0,"sticky_effects_offset":0,"sticky_anchor_link_offset":0}' style="visibility: hidden; transition: none; animation: auto ease 0s 1 normal none running none;">
+<div class="elementor-element elementor-element-7c449cf e-con-full e-flex e-con e-child" data-e-type="container" data-element_type="container" data-id="7c449cf" data-settings='{"background_background":"classic","sticky":"top","sticky_on":["desktop","tablet","mobile"],"sticky_offset":0,"sticky_effects_offset":0,"sticky_anchor_link_offset":0}'>
 <div class="elementor-element elementor-element-d5003a2 e-flex e-con-boxed e-con e-child" data-e-type="container" data-element_type="container" data-id="d5003a2">
 <div class="e-con-inner">
 <div class="elementor-element elementor-element-c21776e e-con-full e-flex e-con e-child" data-e-type="container" data-element_type="container" data-id="c21776e">
@@ -2562,11 +2631,11 @@ html,body{overflow-x:clip !important;overflow-y:visible !important}
 <div class="elementor-element elementor-element-1b1a628 elementor-nav-menu--stretch elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-e-type="widget" data-element_type="widget" data-id="1b1a628" data-settings='{"submenu_icon":{"value":"&lt;i class=\"fas fa-angle-down\" aria-hidden=\"true\"&gt;&lt;\/i&gt;","library":"fa-solid"},"full_width":"stretch","layout":"horizontal","toggle":"burger"}' data-widget_type="nav-menu.default">
 <div class="elementor-widget-container">
 <nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
-<ul class="elementor-nav-menu" id="menu-1-1b1a628"><li class="menu-item menu-item-has-children current-menu-ancestor"><a aria-expanded="false" aria-haspopup="true" class="elementor-item has-submenu" href="#">Services<span class="sub-arrow"><i aria-hidden="true" class="fas fa-angle-down"></i></span></a><ul class="sub-menu elementor-nav-menu--dropdown" role="group"><li class="menu-item current-menu-item"><a aria-current="page" class="elementor-sub-item elementor-item-active" href="https://digilari.com.au/lead-generation/">Lead Generation</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/account-based-marketing/">Account-Based Marketing (ABM)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/paid-search/">Google Ads Management (PPC)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/seo-agency-brisbane/">Search Engine Optimisation (SEO)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/generative-engine-optimisation-geo-services/">Generative Engine Optimisation (GEO)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/conversion-rate-optimisation/">Conversion Rate Optimisation</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/email-marketing/">Email Marketing (EDM)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/social-media-marketing-smm/">Social Media Marketing</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/inbound-and-content-marketing/">Inbound &amp; Content Marketing</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/website-seo-migration-support/">Website SEO Migration Support</a></li></ul></li><li class="menu-item menu-item-has-children"><a aria-expanded="false" aria-haspopup="true" class="elementor-item has-submenu" href="https://digilari.com.au/core-industry-sector-digital-marketing/">Industries<span class="sub-arrow"><i aria-hidden="true" class="fas fa-angle-down"></i></span></a><ul class="sub-menu elementor-nav-menu--dropdown" role="group"><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/construction-marketing-agency/">Construction</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/manufacturing-marketing-agency/">Manufacturing</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/mining-marketing-agency/">Mining</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/logistics-marketing-agency/">Logistics</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/agricultural-marketing-agency/">Agricultural</a></li></ul></li><li class="menu-item"><a class="elementor-item" href="https://digilari.com.au/case-studies/">Case Studies</a></li><li class="menu-item"><a class="elementor-item" href="https://digilari.com.au/our-pricing/">Pricing</a></li><li class="menu-item menu-item-has-children"><a aria-expanded="false" aria-haspopup="true" class="elementor-item has-submenu" href="https://digilari.com.au/why-digilari/">About<span class="sub-arrow"><i aria-hidden="true" class="fas fa-angle-down"></i></span></a><ul class="sub-menu elementor-nav-menu--dropdown" role="group"><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/why-digilari/">Why Digilari</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/why-digilari/#meet-the-team">Meet The Team</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/digital-results-guarantee-performance-marketing/">Digital Results Guarantee (DRG)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/articles/digital-marketing-partner-program/">Digital Partner Program (DPP)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/join-us/">Join Us</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/contact-us/">Contact Us</a></li></ul></li><li class="menu-item menu-item-has-children"><a aria-expanded="false" aria-haspopup="true" class="elementor-item has-submenu" href="https://digilari.com.au/articles/">Resources<span class="sub-arrow"><i aria-hidden="true" class="fas fa-angle-down"></i></span></a><ul class="sub-menu elementor-nav-menu--dropdown" role="group"><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/articles/">Articles</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/articles/digital-agency-costs/">Digital Marketing Cost Guide 2026</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/articles/marketing-terms/">Glossary of Digital Marketing Terms</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/faqs/">FAQs</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/digilari-scholarship/">Digilari University Scholarship</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/digital-marketing-course/">Marketing Training Program</a></li></ul></li></ul> </nav>
-<div aria-expanded="false" aria-label="Menu Toggle" class="elementor-menu-toggle" role="button" tabindex="0">
+<ul class="elementor-nav-menu" data-smartmenus-id="17902129063881028" id="menu-1-1b1a628"><li class="menu-item menu-item-has-children current-menu-ancestor"><a aria-expanded="false" aria-haspopup="true" class="elementor-item has-submenu" href="#">Services<span class="sub-arrow"><i aria-hidden="true" class="fas fa-angle-down"></i></span></a><ul class="sub-menu elementor-nav-menu--dropdown" role="group"><li class="menu-item current-menu-item"><a aria-current="page" class="elementor-sub-item elementor-item-active" href="https://digilari.com.au/lead-generation/">Lead Generation</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/account-based-marketing/">Account-Based Marketing (ABM)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/paid-search/">Google Ads Management (PPC)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/seo-agency-brisbane/">Search Engine Optimisation (SEO)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/generative-engine-optimisation-geo-services/">Generative Engine Optimisation (GEO)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/conversion-rate-optimisation/">Conversion Rate Optimisation</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/email-marketing/">Email Marketing (EDM)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/social-media-marketing-smm/">Social Media Marketing</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/inbound-and-content-marketing/">Inbound &amp; Content Marketing</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/website-seo-migration-support/">Website SEO Migration Support</a></li></ul></li><li class="menu-item menu-item-has-children"><a aria-expanded="false" aria-haspopup="true" class="elementor-item has-submenu" href="https://digilari.com.au/core-industry-sector-digital-marketing/">Industries<span class="sub-arrow"><i aria-hidden="true" class="fas fa-angle-down"></i></span></a><ul class="sub-menu elementor-nav-menu--dropdown" role="group"><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/construction-marketing-agency/">Construction</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/manufacturing-marketing-agency/">Manufacturing</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/mining-marketing-agency/">Mining</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/logistics-marketing-agency/">Logistics</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/agricultural-marketing-agency/">Agricultural</a></li></ul></li><li class="menu-item"><a class="elementor-item" href="https://digilari.com.au/case-studies/">Case Studies</a></li><li class="menu-item"><a class="elementor-item" href="https://digilari.com.au/our-pricing/">Pricing</a></li><li class="menu-item menu-item-has-children"><a aria-expanded="false" aria-haspopup="true" class="elementor-item has-submenu" href="https://digilari.com.au/why-digilari/">About<span class="sub-arrow"><i aria-hidden="true" class="fas fa-angle-down"></i></span></a><ul class="sub-menu elementor-nav-menu--dropdown" role="group"><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/why-digilari/">Why Digilari</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/why-digilari/#meet-the-team">Meet The Team</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/digital-results-guarantee-performance-marketing/">Digital Results Guarantee (DRG)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/articles/digital-marketing-partner-program/">Digital Partner Program (DPP)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/join-us/">Join Us</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/contact-us/">Contact Us</a></li></ul></li><li class="menu-item menu-item-has-children"><a aria-expanded="false" aria-haspopup="true" class="elementor-item has-submenu" href="https://digilari.com.au/articles/">Resources<span class="sub-arrow"><i aria-hidden="true" class="fas fa-angle-down"></i></span></a><ul class="sub-menu elementor-nav-menu--dropdown" role="group"><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/articles/">Articles</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/articles/digital-agency-costs/">Digital Marketing Cost Guide 2026</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/articles/marketing-terms/">Glossary of Digital Marketing Terms</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/faqs/">FAQs</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/digilari-scholarship/">Digilari University Scholarship</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/digital-marketing-course/">Marketing Training Program</a></li></ul></li></ul> </nav>
+<div aria-expanded="false" aria-label="Menu Toggle" class="elementor-menu-toggle" role="button" style="" tabindex="0">
 <i aria-hidden="true" class="elementor-menu-toggle__icon--open eicon-menu-bar" role="presentation"></i><i aria-hidden="true" class="elementor-menu-toggle__icon--close eicon-close" role="presentation"></i> </div>
 <nav aria-hidden="true" class="elementor-nav-menu--dropdown elementor-nav-menu__container">
-<ul class="elementor-nav-menu" id="menu-2-1b1a628"><li class="menu-item menu-item-has-children current-menu-ancestor"><a aria-expanded="false" aria-haspopup="true" class="elementor-item has-submenu" href="#">Services<span class="sub-arrow"><i aria-hidden="true" class="fas fa-angle-down"></i></span></a><ul class="sub-menu elementor-nav-menu--dropdown" role="group"><li class="menu-item current-menu-item"><a aria-current="page" class="elementor-sub-item elementor-item-active" href="https://digilari.com.au/lead-generation/">Lead Generation</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/account-based-marketing/">Account-Based Marketing (ABM)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/paid-search/">Google Ads Management (PPC)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/seo-agency-brisbane/">Search Engine Optimisation (SEO)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/generative-engine-optimisation-geo-services/">Generative Engine Optimisation (GEO)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/conversion-rate-optimisation/">Conversion Rate Optimisation</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/email-marketing/">Email Marketing (EDM)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/social-media-marketing-smm/">Social Media Marketing</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/inbound-and-content-marketing/">Inbound &amp; Content Marketing</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/website-seo-migration-support/">Website SEO Migration Support</a></li></ul></li><li class="menu-item menu-item-has-children"><a aria-expanded="false" aria-haspopup="true" class="elementor-item has-submenu" href="https://digilari.com.au/core-industry-sector-digital-marketing/">Industries<span class="sub-arrow"><i aria-hidden="true" class="fas fa-angle-down"></i></span></a><ul class="sub-menu elementor-nav-menu--dropdown" role="group"><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/construction-marketing-agency/">Construction</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/manufacturing-marketing-agency/">Manufacturing</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/mining-marketing-agency/">Mining</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/logistics-marketing-agency/">Logistics</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/agricultural-marketing-agency/">Agricultural</a></li></ul></li><li class="menu-item"><a class="elementor-item" href="https://digilari.com.au/case-studies/">Case Studies</a></li><li class="menu-item"><a class="elementor-item" href="https://digilari.com.au/our-pricing/">Pricing</a></li><li class="menu-item menu-item-has-children"><a aria-expanded="false" aria-haspopup="true" class="elementor-item has-submenu" href="https://digilari.com.au/why-digilari/">About<span class="sub-arrow"><i aria-hidden="true" class="fas fa-angle-down"></i></span></a><ul class="sub-menu elementor-nav-menu--dropdown" role="group"><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/why-digilari/">Why Digilari</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/why-digilari/#meet-the-team">Meet The Team</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/digital-results-guarantee-performance-marketing/">Digital Results Guarantee (DRG)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/articles/digital-marketing-partner-program/">Digital Partner Program (DPP)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/join-us/">Join Us</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/contact-us/">Contact Us</a></li></ul></li><li class="menu-item menu-item-has-children"><a aria-expanded="false" aria-haspopup="true" class="elementor-item has-submenu" href="https://digilari.com.au/articles/">Resources<span class="sub-arrow"><i aria-hidden="true" class="fas fa-angle-down"></i></span></a><ul class="sub-menu elementor-nav-menu--dropdown" role="group"><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/articles/">Articles</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/articles/digital-agency-costs/">Digital Marketing Cost Guide 2026</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/articles/marketing-terms/">Glossary of Digital Marketing Terms</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/faqs/">FAQs</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/digilari-scholarship/">Digilari University Scholarship</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/digital-marketing-course/">Marketing Training Program</a></li></ul></li></ul> </nav>
+<ul class="elementor-nav-menu" data-smartmenus-id="17902129063894595" id="menu-2-1b1a628"><li class="menu-item menu-item-has-children current-menu-ancestor"><a aria-expanded="false" aria-haspopup="true" class="elementor-item has-submenu" href="#">Services<span class="sub-arrow"><i aria-hidden="true" class="fas fa-angle-down"></i></span></a><ul class="sub-menu elementor-nav-menu--dropdown" role="group"><li class="menu-item current-menu-item"><a aria-current="page" class="elementor-sub-item elementor-item-active" href="https://digilari.com.au/lead-generation/">Lead Generation</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/account-based-marketing/">Account-Based Marketing (ABM)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/paid-search/">Google Ads Management (PPC)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/seo-agency-brisbane/">Search Engine Optimisation (SEO)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/generative-engine-optimisation-geo-services/">Generative Engine Optimisation (GEO)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/conversion-rate-optimisation/">Conversion Rate Optimisation</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/email-marketing/">Email Marketing (EDM)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/social-media-marketing-smm/">Social Media Marketing</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/inbound-and-content-marketing/">Inbound &amp; Content Marketing</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/website-seo-migration-support/">Website SEO Migration Support</a></li></ul></li><li class="menu-item menu-item-has-children"><a aria-expanded="false" aria-haspopup="true" class="elementor-item has-submenu" href="https://digilari.com.au/core-industry-sector-digital-marketing/">Industries<span class="sub-arrow"><i aria-hidden="true" class="fas fa-angle-down"></i></span></a><ul class="sub-menu elementor-nav-menu--dropdown" role="group"><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/construction-marketing-agency/">Construction</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/manufacturing-marketing-agency/">Manufacturing</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/mining-marketing-agency/">Mining</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/logistics-marketing-agency/">Logistics</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/agricultural-marketing-agency/">Agricultural</a></li></ul></li><li class="menu-item"><a class="elementor-item" href="https://digilari.com.au/case-studies/">Case Studies</a></li><li class="menu-item"><a class="elementor-item" href="https://digilari.com.au/our-pricing/">Pricing</a></li><li class="menu-item menu-item-has-children"><a aria-expanded="false" aria-haspopup="true" class="elementor-item has-submenu" href="https://digilari.com.au/why-digilari/">About<span class="sub-arrow"><i aria-hidden="true" class="fas fa-angle-down"></i></span></a><ul class="sub-menu elementor-nav-menu--dropdown" role="group"><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/why-digilari/">Why Digilari</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/why-digilari/#meet-the-team">Meet The Team</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/digital-results-guarantee-performance-marketing/">Digital Results Guarantee (DRG)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/articles/digital-marketing-partner-program/">Digital Partner Program (DPP)</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/join-us/">Join Us</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/contact-us/">Contact Us</a></li></ul></li><li class="menu-item menu-item-has-children"><a aria-expanded="false" aria-haspopup="true" class="elementor-item has-submenu" href="https://digilari.com.au/articles/">Resources<span class="sub-arrow"><i aria-hidden="true" class="fas fa-angle-down"></i></span></a><ul class="sub-menu elementor-nav-menu--dropdown" role="group"><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/articles/">Articles</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/articles/digital-agency-costs/">Digital Marketing Cost Guide 2026</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/articles/marketing-terms/">Glossary of Digital Marketing Terms</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/faqs/">FAQs</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/digilari-scholarship/">Digilari University Scholarship</a></li><li class="menu-item"><a class="elementor-sub-item" href="https://digilari.com.au/digital-marketing-course/">Marketing Training Program</a></li></ul></li></ul> </nav>
 </div>
 </div>
 <div class="elementor-element elementor-element-2bb6785 e-con-full elementor-hidden-desktop e-flex e-con e-child" data-e-type="container" data-element_type="container" data-id="2bb6785">
@@ -3768,13 +3837,10 @@ jQuery(document).ready(function($) {
   var nav = document.querySelector('.dlg-subnav');
   if (!nav) return;
   function headerBottom(){
-    // bottom edge of whichever site header is currently pinned to the top of the viewport
-    var max = 0;
-    document.querySelectorAll('[data-elementor-type="header"] .elementor-sticky--active, [data-elementor-type="header"] .elementor-sticky').forEach(function(h){
-      var r = h.getBoundingClientRect(), cs = getComputedStyle(h);
-      if (cs.visibility !== 'hidden' && cs.display !== 'none' && r.height > 0 && r.top <= 1 && r.bottom > max && r.bottom < 220) max = r.bottom;
-    });
-    return Math.round(max);
+    var header = document.querySelector('[data-elementor-type="header"]');
+    if (!header) return 0;
+    var r = header.getBoundingClientRect();
+    return r.top <= 1 && r.bottom > 0 ? Math.round(r.bottom) : 0;
   }
   function setTop(){ nav.style.top = headerBottom() + 'px'; }
   function offset(){ return headerBottom() + nav.offsetHeight + 16; }
