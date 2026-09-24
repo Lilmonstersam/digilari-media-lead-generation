@@ -13,37 +13,69 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;700;800;900&amp;family=Red+Hat+Text:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css?v=20260924a">
+  <link rel="stylesheet" href="./styles.css?v=20260924b">
+  <link rel="stylesheet" href="../assets/dig-shared.css?v=20260924b">
 </head>
 <body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="header-inner shell">
-      <a class="brand" href="../index.html" aria-label="Digilari Media, lead generation home">
-        <img src="./dig-logo-c5.png" width="286" height="150" alt="Digilari Media">
-      </a>
-      <nav class="desktop-nav" aria-label="Main navigation">
-        <a href="#approach">Approach</a>
-        <a href="#services">Services</a>
-        <a href="#fit">Who it is for</a>
-        <a href="#faq">FAQs</a>
-        <a class="nav-back" href="../index.html">Lead Generation</a>
-      </nav>
-      <a class="header-cta" href="#enquiry">Let's talk ABM <span aria-hidden="true">↗</span></a>
-      <button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>
-      <a href="#approach">Approach</a>
-      <a href="#services">Services</a>
-      <a href="#fit">Who it is for</a>
-      <a href="#faq">FAQs</a>
-      <a href="../index.html">Lead Generation</a>
-      <a class="mobile-menu-cta" href="#enquiry">Let's talk ABM <span aria-hidden="true">↗</span></a>
+  <header class="dig-header" id="dig-header">
+  <div class="dig-header-inner">
+    <a class="dig-brand" href="https://digilari.com.au/" aria-label="Digilari Media home"><img src="./dig-logo-c5.png" width="286" height="150" alt="Digilari Media"></a>
+    <button class="dig-menu-toggle" type="button" aria-label="Open menu" aria-controls="dig-primary-nav" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="dig-primary-nav" id="dig-primary-nav" aria-label="Main navigation">
+      <div class="dig-nav-group">
+        <div class="dig-nav-top"><a href="https://digilari.com.au/why-digilari/">Why Digilari</a><button class="dig-submenu-toggle" type="button" aria-label="Open Why Digilari submenu" aria-controls="dig-menu-why" aria-expanded="false"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m3 6 5 5 5-5"/></svg></button></div>
+        <div class="dig-submenu dig-submenu-wide" id="dig-menu-why">
+          <a href="https://digilari.com.au/why-digilari/">Why Digilari</a>
+          <a href="https://digilari.com.au/why-digilari/#meet-the-team">Meet The Team</a>
+          <a href="https://digilari.com.au/digital-results-guarantee-performance-marketing/">Digital Results Guarantee (DRG)</a>
+          <a href="https://digilari.com.au/articles/digital-marketing-partner-program/">Digital Partner Program (DPP)</a>
+          <p class="dig-submenu-label">Core Industry Sector Marketing</p>
+          <a href="https://digilari.com.au/core-industry-sector-digital-marketing/">All sectors</a>
+          <a href="https://digilari.com.au/agricultural-marketing-agency/">Agricultural Marketing Agency</a>
+          <a href="https://digilari.com.au/construction-marketing-agency/">Construction Marketing Agency</a>
+          <a href="https://digilari.com.au/mining-marketing-agency/">Mining Marketing Agency</a>
+          <a href="https://digilari.com.au/manufacturing-marketing-agency/">Manufacturing Marketing Agency</a>
+          <a href="https://digilari.com.au/logistics-marketing-agency/">Logistics Marketing Agency</a>
+        </div>
+      </div>
+      <div class="dig-nav-group">
+        <div class="dig-nav-top"><button class="dig-submenu-toggle dig-nav-label" type="button" aria-controls="dig-menu-capabilities" aria-expanded="false">Our Capabilities <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m3 6 5 5 5-5"/></svg></button></div>
+        <div class="dig-submenu dig-submenu-wide" id="dig-menu-capabilities">
+          <a href="../index.html">Lead Generation</a>
+          <a href="./index.html" aria-current="page">Account-Based Marketing (ABM)</a>
+          <a href="https://digilari.com.au/inbound-and-content-marketing/">Inbound Marketing</a>
+          <a href="https://digilari.com.au/roi-marketing-services/">ROI Marketing</a>
+          <a href="https://digilari.com.au/generative-engine-optimisation-geo-services/">Generative Engine Optimisation (GEO)</a>
+          <a href="https://digilari.com.au/seo-agency-brisbane/">Search Engine Optimisation (SEO)</a>
+          <a href="https://digilari.com.au/website-seo-migration-support/">Website SEO Migration Support</a>
+          <a href="https://digilari.com.au/ppc-agency/">Google Ads Management (PPC Marketing)</a>
+          <a href="https://digilari.com.au/conversion-rate-optimisation/">Conversion Rate Optimisation</a>
+          <a href="https://digilari.com.au/social-media-marketing-smm/">Social Media Marketing</a>
+          <a href="https://digilari.com.au/email-marketing/">Email Marketing (EDM)</a>
+        </div>
+      </div>
+      <a class="dig-nav-direct" href="https://digilari.com.au/case-studies/">Case Studies</a>
+      <div class="dig-nav-group">
+        <div class="dig-nav-top"><a href="https://digilari.com.au/articles/">Knowledge Hub</a><button class="dig-submenu-toggle" type="button" aria-label="Open Knowledge Hub submenu" aria-controls="dig-menu-knowledge" aria-expanded="false"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m3 6 5 5 5-5"/></svg></button></div>
+        <div class="dig-submenu" id="dig-menu-knowledge">
+          <a href="https://digilari.com.au/articles/">Articles</a>
+          <a href="https://digilari.com.au/faqs/">FAQs</a>
+          <a href="https://digilari.com.au/articles/digital-agency-costs/">Digital Marketing Cost Guide 2026</a>
+          <a href="https://digilari.com.au/digilari-scholarship/">Digilari University Scholarship</a>
+          <a href="https://digilari.com.au/digital-marketing-course/">Marketing Training Program</a>
+          <a href="https://digilari.com.au/articles/marketing-terms/">Glossary of Digital Marketing Terms</a>
+        </div>
+      </div>
+      <div class="dig-nav-group">
+        <div class="dig-nav-top"><a href="https://digilari.com.au/contact-us/">Contact Us</a><button class="dig-submenu-toggle" type="button" aria-label="Open Contact Us submenu" aria-controls="dig-menu-contact" aria-expanded="false"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m3 6 5 5 5-5"/></svg></button></div>
+        <div class="dig-submenu" id="dig-menu-contact"><a href="https://digilari.com.au/contact-us/">Contact Us</a><a href="https://digilari.com.au/join-us/">Join Us</a></div>
+      </div>
+      <div class="dig-mobile-meta"><a class="dig-phone" href="tel:1300859358">1300 859 358</a><a class="dig-pricing" href="https://digilari.com.au/our-pricing/">Our Pricing</a></div>
     </nav>
-  </header>
-
+    <div class="dig-header-meta"><a class="dig-phone" href="tel:1300859358">1300 859 358</a><a class="dig-pricing" href="https://digilari.com.au/our-pricing/">Our Pricing</a></div>
+  </div>
+</header>
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
       <div class="shell hero-grid">
@@ -249,6 +281,7 @@
     <a href="tel:1300859358">Call us</a>
     <a href="#enquiry">Discuss ABM <span aria-hidden="true">↗</span></a>
   </div>
-  <script src="./main.js?v=20260924a" defer></script>
+  <script src="./main.js?v=20260924b" defer></script>
+  <script src="../assets/dig-shared.js?v=20260924b" defer></script>
 </body>
 </html>
