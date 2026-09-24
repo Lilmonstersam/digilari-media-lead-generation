@@ -29,7 +29,7 @@
         <a href="#faq">FAQs</a>
         <a class="nav-back" href="../index.html">Lead Generation</a>
       </nav>
-      <a class="header-cta" href="#contact">Let's talk ABM <span aria-hidden="true">↗</span></a>
+      <a class="header-cta" href="#enquiry">Let's talk ABM <span aria-hidden="true">↗</span></a>
       <button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -40,55 +40,41 @@
       <a href="#fit">Who it is for</a>
       <a href="#faq">FAQs</a>
       <a href="../index.html">Lead Generation</a>
-      <a class="mobile-menu-cta" href="#contact">Let's talk ABM <span aria-hidden="true">↗</span></a>
+      <a class="mobile-menu-cta" href="#enquiry">Let's talk ABM <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero section-dark" aria-labelledby="hero-title">
-      <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
-      <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+    <section class="hero" aria-labelledby="hero-title">
       <div class="shell hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> Account-Based Marketing Agency Australia</p>
+          <p class="eyebrow"><span class="eyebrow-line"></span> Account-Based Marketing Agency Australia</p>
           <h1 id="hero-title">Account-Based Marketing Agency for accounts that <em>matter.</em></h1>
           <p class="hero-lead">Your next major contract is unlikely to start with a single form fill. We put your business in front of the companies and buying groups you most want to work with, then connect engagement to real sales opportunities.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#contact">Discuss your target accounts <span aria-hidden="true">↗</span></a>
-            <a class="text-link text-link-light" href="#approach">See how ABM works <span aria-hidden="true">↓</span></a>
+            <a class="button button-primary" href="#enquiry">Discuss your target accounts <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#approach">See how ABM works <span aria-hidden="true">↓</span></a>
           </div>
           <div class="hero-proof">
             <span class="hero-proof-label">Built for complex B2B sales</span>
             <span>Construction</span><span>Manufacturing</span><span>Industrial services</span>
           </div>
         </div>
-        <div class="hero-visual" role="img" aria-label="Illustration of a target account and its buying committee">
-          <div class="visual-topline">
-            <span class="signal-dot"></span>
-            <span>ACCOUNT INTELLIGENCE</span>
-            <span class="visual-index">01 / 03</span>
-          </div>
-          <div class="visual-account">
-            <div class="visual-monogram" aria-hidden="true">A</div>
-            <div>
-              <span class="visual-small">PRIORITY ACCOUNT</span>
-              <strong>Target company</strong>
-            </div>
-            <span class="visual-status">In market</span>
-          </div>
-          <div class="visual-divider"></div>
-          <p class="visual-heading">One account. A whole buying group.</p>
-          <div class="committee-map">
-            <div class="committee-person"><span class="person-symbol">P</span><span>Procurement</span><i></i></div>
-            <div class="committee-person"><span class="person-symbol">E</span><span>Engineering</span><i></i></div>
-            <div class="committee-person"><span class="person-symbol">O</span><span>Operations</span><i></i></div>
-            <div class="committee-person"><span class="person-symbol">F</span><span>Finance</span><i></i></div>
-          </div>
-          <div class="visual-flow">
-            <span>Identify</span><b aria-hidden="true">→</b><span>Engage</span><b aria-hidden="true">→</b><span>Opportunity</span>
-          </div>
-          <div class="visual-note"><span class="visual-note-mark" aria-hidden="true">✳</span> Marketing and sales working from the same account list.</div>
-        </div>
+        <aside class="enquiry-card" id="enquiry" aria-labelledby="enquiry-title">
+          <p class="enquiry-kicker">ABM enquiry</p>
+          <h2 id="enquiry-title">Let's discuss your target accounts.</h2>
+          <p class="enquiry-intro">Share a few details and start a conversation with our team.</p>
+          <form id="abm-enquiry-form">
+            <div class="form-field"><label for="abm-website">Your website URL <span aria-hidden="true">*</span></label><input id="abm-website" name="website" type="url" inputmode="url" autocomplete="url" placeholder="https://example.com.au" required></div>
+            <div class="form-field"><label for="abm-name">Your name <span aria-hidden="true">*</span></label><input id="abm-name" name="name" type="text" autocomplete="name" placeholder="Your name" required></div>
+            <div class="form-field"><label for="abm-email">Your email <span aria-hidden="true">*</span></label><input id="abm-email" name="email" type="email" autocomplete="email" placeholder="you@company.com.au" required></div>
+            <div class="form-field"><label for="abm-phone">Your phone <span aria-hidden="true">*</span></label><input id="abm-phone" name="phone" type="tel" autocomplete="tel" placeholder="Your phone number" required></div>
+            <div class="form-field"><label for="abm-brief">Target accounts or brief <span class="optional">(optional)</span></label><textarea id="abm-brief" name="brief" rows="3" placeholder="Tell us who you want to reach"></textarea></div>
+            <button class="button button-primary enquiry-submit" type="submit">Prepare my enquiry <span aria-hidden="true">↗</span></button>
+            <p class="form-note">This opens an email draft. Send the email from your email app to complete your enquiry.</p>
+            <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
+          </form>
+        </aside>
       </div>
       <div class="hero-bottom shell"><span>SCROLL TO EXPLORE</span><span class="hero-bottom-rule"></span><span>01 / ACCOUNT-BASED MARKETING</span></div>
     </section>
@@ -160,7 +146,7 @@
           <p class="eyebrow">What we do</p>
           <h2 id="services-title">One strategy across every account touchpoint.</h2>
           <p>We select channels for your audience and sales cycle. The point is consistent, useful contact with the right people, not activity for its own sake.</p>
-          <a class="button button-dark" href="#contact">Build an ABM plan <span aria-hidden="true">↗</span></a>
+          <a class="button button-dark" href="#enquiry">Build an ABM plan <span aria-hidden="true">↗</span></a>
         </div>
         <div class="service-list">
           <article><span>01 /</span><div><h3>Account strategy and research</h3><p>ICP definition, account tiers, buying-group mapping and campaign priorities.</p></div></article>
@@ -174,10 +160,10 @@
     <section class="fit section-pad" id="fit" aria-labelledby="fit-title">
       <div class="shell fit-grid">
         <div class="fit-copy">
-          <p class="eyebrow eyebrow-light">Is ABM right for you?</p>
+          <p class="eyebrow">Is ABM right for you?</p>
           <h2 id="fit-title">Built for deals with more people, more steps and more at stake.</h2>
           <p>ABM suits B2B teams that know which organisations they want to win and can invest in relationships over time.</p>
-          <a class="text-link text-link-light" href="#contact">Talk through your account list <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#enquiry">Talk through your account list <span aria-hidden="true">↗</span></a>
         </div>
         <div class="fit-panel">
           <p class="fit-panel-title">A strong fit when you have:</p>
@@ -244,7 +230,7 @@
         <div class="contact-actions">
           <a class="button button-white" href="mailto:marketing@digilari.com.au?subject=ABM%20strategy%20enquiry">Email us about ABM <span aria-hidden="true">↗</span></a>
           <a class="contact-phone" href="tel:1300859358">Or call <strong>1300 859 358</strong></a>
-          <span>No form or account required.</span>
+          <span>You can also use the enquiry form above.</span>
         </div>
       </div>
     </section>
@@ -261,7 +247,7 @@
 
   <div class="mobile-action" aria-label="Quick contact options">
     <a href="tel:1300859358">Call us</a>
-    <a href="mailto:marketing@digilari.com.au?subject=ABM%20strategy%20enquiry">Discuss ABM <span aria-hidden="true">↗</span></a>
+    <a href="#enquiry">Discuss ABM <span aria-hidden="true">↗</span></a>
   </div>
   <script src="./main.js" defer></script>
 </body>

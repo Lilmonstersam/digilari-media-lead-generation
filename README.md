@@ -25,4 +25,4 @@ robots.txt                  Blocks crawling (mockup duplicates live-site content
 - The page is `noindex, nofollow` and `robots.txt` disallows crawling so the mockup cannot compete with digilari.com.au in search.
 - Forms, the chatbot and some Elementor chunks load from the live WordPress site or are disabled; they will not submit from the mockup.
 - Account-based marketing links on the lead generation page open the ABM mockup in this repository.
-- The ABM page uses email and telephone contact links. It does not submit a form.
+- The ABM enquiry form uses the same core fields as the lead generation page. Submitting it opens a pre-filled email draft addressed to Digilari; the visitor must send that email to complete the enquiry.
