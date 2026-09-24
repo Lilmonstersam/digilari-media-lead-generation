@@ -7,7 +7,7 @@ import re
 repo = Path(__file__).resolve().parents[1]
 source = repo.parent / "lead-generation"
 template = (repo / "assets/dig-header.html").read_text().strip()
-version = "20260924b"
+version = "20260924c"
 
 pages = (
     (repo / "index.html", "./assets/dig-logo-c5.png", "./index.html", "./account-based-marketing/index.html", True, "./assets/"),

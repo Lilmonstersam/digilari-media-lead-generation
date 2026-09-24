@@ -7,7 +7,7 @@
 .dig-primary-nav { display: flex; justify-content: center; align-items: center; flex: 1; gap: clamp(14px, 1.8vw, 27px); }
 .dig-nav-group { position: relative; }
 .dig-nav-top { display: flex; align-items: center; gap: 3px; }
-.dig-nav-top > a, .dig-nav-top > button, .dig-nav-direct { color: #211b29; text-decoration: none; font: 700 .94rem/1.2 "Red Hat Display", sans-serif; white-space: nowrap; }
+.dig-nav-top > a, .dig-nav-top > button, .dig-nav-direct { color: #211b29; text-decoration: none; font: 700 15px/1.2 "Red Hat Display", sans-serif; white-space: nowrap; }
 .dig-nav-top > a:hover, .dig-nav-top > button:hover, .dig-nav-direct:hover, .dig-nav-top > a[aria-current="page"], .dig-submenu a[aria-current="page"] { color: #e41b6f; }
 .dig-nav-top > button { border: 0; background: transparent; padding: 7px 1px 7px 4px; cursor: pointer; }
 .dig-nav-top > button.dig-nav-label { display: flex; align-items: center; gap: 7px; padding-left: 0; }
@@ -17,13 +17,13 @@
 .dig-submenu::before { content: ""; position: absolute; left: 0; right: 0; bottom: 100%; height: 24px; }
 .dig-nav-group:hover .dig-submenu, .dig-nav-group:focus-within .dig-submenu, .dig-nav-group.is-open .dig-submenu { opacity: 1; visibility: visible; pointer-events: auto; transform: translateY(0); }
 .dig-submenu-wide { display: grid; grid-template-columns: repeat(2, minmax(220px, 1fr)); gap: 0 22px; }
-.dig-submenu a { display: block; padding: 8px 10px; border-radius: 6px; color: #514955; text-decoration: none; font: 600 .88rem/1.35 "Red Hat Text", Arial, sans-serif; white-space: normal; }
+.dig-submenu a { display: block; padding: 8px 10px; border-radius: 6px; color: #514955; text-decoration: none; font: 600 14px/1.35 "Red Hat Text", Arial, sans-serif; white-space: normal; }
 .dig-submenu a:hover, .dig-submenu a:focus-visible { color: #bc155a; background: #fbf0f5; }
-.dig-submenu-label { grid-column: 1 / -1; margin: 9px 10px 3px; color: #a51857; font: 800 .69rem/1.3 "Red Hat Display", sans-serif; letter-spacing: .12em; text-transform: uppercase; }
+.dig-submenu-label { grid-column: 1 / -1; margin: 9px 10px 3px; color: #a51857; font: 800 11px/1.3 "Red Hat Display", sans-serif; letter-spacing: .12em; text-transform: uppercase; }
 .dig-header-meta { display: flex; align-items: center; gap: 18px; flex: none; }
-.dig-phone { color: #c51b60; text-decoration: none; font: 800 1.05rem/1.15 "Red Hat Display", sans-serif; white-space: nowrap; }
-.dig-pricing { display: inline-flex; justify-content: center; align-items: center; min-height: 46px; padding: 10px 22px; border-radius: 100px; background: #e41b6f; color: #fff !important; text-decoration: none; font: 800 .9rem/1.2 "Red Hat Display", sans-serif; white-space: nowrap; }
-.dig-pricing:hover { background: #bc155a; }
+.dig-header .dig-phone { color: #c51b60 !important; text-decoration: none; font: 800 17px/1.15 "Red Hat Display", sans-serif !important; white-space: nowrap; }
+.dig-header .dig-pricing { display: inline-flex; justify-content: center; align-items: center; min-height: 46px; padding: 10px 22px; border-radius: 100px; background: #e41b6f; color: #fff !important; text-decoration: none; font: 800 14px/1.2 "Red Hat Display", sans-serif !important; white-space: nowrap; }
+.dig-header .dig-pricing:hover { background: #bc155a; }
 .dig-menu-toggle, .dig-mobile-meta { display: none; }
 .dig-header :focus-visible { outline: 3px solid #fd9b28; outline-offset: 3px; }
 
@@ -32,17 +32,18 @@ body.elementor-page-18955 { font-family: "Red Hat Text", Arial, sans-serif !impo
 body.elementor-page-18955 .site-content :is(p, li, td, th, label, input, textarea) { font-family: "Red Hat Text", Arial, sans-serif !important; }
 body.elementor-page-18955 .site-content :is(p, li) { line-height: 1.65; }
 body.elementor-page-18955 .site-content :is(h1, h2, h3, h4, h5) { font-family: "Red Hat Display", "Trebuchet MS", sans-serif !important; letter-spacing: -.035em; }
-body.elementor-page-18955 .page-header.dlg-compact-header .page-title { font-size: clamp(2rem, 3vw, 2.6rem) !important; font-weight: 800; line-height: 1.12; }
-body.elementor-page-18955 .elementor-element-4bd13d5 h2 { font-size: clamp(3.1rem, 5vw, 4.8rem) !important; font-weight: 900 !important; line-height: 1.02 !important; letter-spacing: -.045em; }
-body.elementor-page-18955 .elementor-element-c7fe01a p { font-size: clamp(1.05rem, 1.5vw, 1.2rem); line-height: 1.7; }
+body.elementor-page-18955 .page-header.dlg-compact-header .page-title { font-size: clamp(30px, 3vw, 42px) !important; font-weight: 800; line-height: 1.12; }
+body.elementor-page-18955 .elementor-element-4bd13d5 h2 { font-size: clamp(48px, 5vw, 77px) !important; font-weight: 900 !important; line-height: 1.02 !important; letter-spacing: -.045em; }
+body.elementor-page-18955 .elementor-element-c7fe01a p { font-size: clamp(17px, 1.5vw, 19px) !important; line-height: 1.7 !important; }
 body.elementor-page-18955 .site-content .custom-form-wrapper { padding: clamp(24px, 3vw, 38px) !important; border: 1px solid #e7dfe5; border-radius: 20px; background: #fbf8f5; box-shadow: 0 22px 55px rgba(33,27,41,.1); }
-body.elementor-page-18955 .site-content .custom-form-wrapper h2 { color: #211b29 !important; font-size: clamp(1.8rem, 2.7vw, 2.65rem) !important; font-weight: 800 !important; line-height: 1.12 !important; letter-spacing: -.035em; text-align: left !important; }
-body.elementor-page-18955 .site-content .custom-form-wrapper .elementor-widget-container > p { color: #514955; font-size: .93rem; line-height: 1.6; text-align: left !important; }
-body.elementor-page-18955 .site-content .custom-form-wrapper .wpcf7 input:not([type="hidden"]) { min-height: 47px; padding: 10px 12px; border: 1px solid #cfc5cc; border-radius: 8px; background: #fff; color: #211b29; font-size: .9rem; }
+body.elementor-page-18955 .site-content .custom-form-wrapper h2 { color: #211b29 !important; font-size: clamp(29px, 2.7vw, 42px) !important; font-weight: 800 !important; line-height: 1.12 !important; letter-spacing: -.035em; text-align: left !important; }
+body.elementor-page-18955 .site-content .custom-form-wrapper .elementor-widget-container > p { color: #514955; font-size: 15px !important; line-height: 1.6; text-align: left !important; }
+body.elementor-page-18955 .site-content .custom-form-wrapper .wpcf7 input:not([type="hidden"]) { min-height: 47px; padding: 10px 12px; border: 1px solid #cfc5cc; border-radius: 8px; background: #fff; color: #211b29; font-size: 15px !important; }
 body.elementor-page-18955 .site-content .custom-form-wrapper .wpcf7 input:focus { border-color: #e41b6f; outline: 2px solid rgba(228,27,111,.22); outline-offset: 1px; }
-body.elementor-page-18955 .site-content :is(.dlg-h2, .dlg-faq-title, #services .main-heading, .dlg-final h2) { font-size: clamp(2.4rem, 4vw, 4.25rem) !important; font-weight: 800 !important; line-height: 1.12 !important; letter-spacing: -.035em; }
-body.elementor-page-18955 .site-content :is(.dlg-h3, .dlg-case h3, .dlg-fit-card h3, .service-box h5) { font-size: 1.45rem !important; font-weight: 800 !important; line-height: 1.2 !important; letter-spacing: -.025em; }
-body.elementor-page-18955 .site-content :is(.dlg-section > .dlg-wrap > p, .dlg-what p, .dlg-lead, .dlg-final p) { font-size: 1.06rem; line-height: 1.7; }
+body.elementor-page-18955 .site-content :is(.dlg-h2, .dlg-faq-title, #services .main-heading, .dlg-final h2) { font-size: clamp(38px, 4vw, 68px) !important; font-weight: 800 !important; line-height: 1.12 !important; letter-spacing: -.035em; }
+body.elementor-page-18955 .site-content :is(.dlg-h3, .dlg-case h3, .dlg-fit-card h3, .service-box h5) { font-size: 23px !important; font-weight: 800 !important; line-height: 1.2 !important; letter-spacing: -.025em; }
+body.elementor-page-18955 .site-content :is(.dlg-section > .dlg-wrap > p, .dlg-what p, .dlg-lead, .dlg-final p) { font-size: 17px !important; line-height: 1.7; }
+body.elementor-page-18955 .site-content #services p { font-size: 16px; }
 body.elementor-page-18955 .dlg-subnav { top: 88px; }
 body.elementor-page-18955 #content :is(#what, #leads, #services, #process, #results, #pricing, #guarantee, #faq, #audit, #audit-2) { scroll-margin-top: 154px; }
 
@@ -50,7 +51,7 @@ body.elementor-page-18955 #content :is(#what, #leads, #services, #process, #resu
   .dig-header-inner { min-height: 74px; }
   .dig-brand, .dig-brand img { width: 137px; }
   .dig-header-meta { display: none; }
-  .dig-menu-toggle { display: flex; flex-direction: column; justify-content: center; gap: 5px; width: 44px; height: 44px; margin-left: auto; padding: 9px; border: 1px solid #d8cfd5; border-radius: 7px; background: #fff; cursor: pointer; }
+  .dig-header .dig-menu-toggle { display: flex; flex-direction: column; justify-content: center; gap: 5px; width: 44px; height: 44px; margin-left: auto; padding: 9px; border: 1px solid #d8cfd5; border-radius: 7px; background: #fff !important; color: #211b29 !important; cursor: pointer; }
   .dig-menu-toggle span { display: block; width: 100%; height: 2px; border-radius: 2px; background: #211b29; transition: transform .2s, opacity .2s; }
   .dig-menu-toggle[aria-expanded="true"] span:first-child { transform: translateY(7px) rotate(45deg); }
   .dig-menu-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
@@ -59,7 +60,7 @@ body.elementor-page-18955 #content :is(#what, #leads, #services, #process, #resu
   .dig-primary-nav.is-open { display: block; }
   .dig-nav-group { border-bottom: 1px solid #e7dfe5; }
   .dig-nav-top { justify-content: space-between; min-height: 52px; }
-  .dig-nav-top > a, .dig-nav-top > button, .dig-nav-direct { font-size: 1rem; }
+  .dig-nav-top > a, .dig-nav-top > button, .dig-nav-direct { font-size: 16px; }
   .dig-nav-top > a { flex: 1; padding: 13px 0; }
   .dig-nav-top > button { width: 42px; min-height: 42px; }
   .dig-nav-top > button.dig-nav-label { width: 100%; justify-content: space-between; }
@@ -76,9 +77,9 @@ body.elementor-page-18955 #content :is(#what, #leads, #services, #process, #resu
 @media (max-width: 600px) {
   .dig-header-inner { width: min(100% - 36px, 1240px); }
   .dig-mobile-meta { flex-direction: column; align-items: stretch; text-align: center; }
-  body.elementor-page-18955 .elementor-element-4bd13d5 h2 { font-size: clamp(3rem, 12vw, 4.5rem) !important; }
-  body.elementor-page-18955 .site-content :is(.dlg-h2, .dlg-faq-title, #services .main-heading, .dlg-final h2) { font-size: clamp(2.15rem, 10vw, 3.1rem) !important; }
-  body.elementor-page-18955 .site-content :is(.dlg-h3, .dlg-case h3, .dlg-fit-card h3, .service-box h5) { font-size: 1.35rem !important; }
+  body.elementor-page-18955 .elementor-element-4bd13d5 h2 { font-size: clamp(48px, 12vw, 72px) !important; }
+  body.elementor-page-18955 .site-content :is(.dlg-h2, .dlg-faq-title, #services .main-heading, .dlg-final h2) { font-size: clamp(34px, 10vw, 50px) !important; }
+  body.elementor-page-18955 .site-content :is(.dlg-h3, .dlg-case h3, .dlg-fit-card h3, .service-box h5) { font-size: 22px !important; }
 }
 @media (prefers-reduced-motion: reduce) {
   .dig-header * { transition-duration: .01ms !important; }
