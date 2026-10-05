@@ -22,3 +22,7 @@ dist/
 # Logs
 *.log
 npm-debug.log*
+
+# Python page-generation caches
+__pycache__/
+*.pyc

@@ -30,6 +30,7 @@ jobs:
           cp index.html 404.html robots.txt .nojekyll _site/
           cp -r assets _site/assets
           cp -r account-based-marketing _site/account-based-marketing
+          cp -r social-media-marketing _site/social-media-marketing
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

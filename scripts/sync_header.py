@@ -1,54 +1,53 @@
-"""Keep both mockup headers in sync with the shared Digilari navigation."""
-
+"""Apply the latest categorised SMM header to every page in this mockup."""
 from pathlib import Path
+import os
 import re
+import sys
 
+REPO = Path(__file__).resolve().parents[1]
+SMM = REPO / 'social-media-marketing'
+sys.path.insert(0, str(SMM / 'scripts'))
+from components import navigation
 
-repo = Path(__file__).resolve().parents[1]
-source = repo.parent / "lead-generation"
-template = (repo / "assets/dig-header.html").read_text().strip()
-version = "20260924e"
+VERSION = '20261005smm'
+PAGES = [REPO / 'index.html', REPO / 'account-based-marketing/index.html', SMM / 'index.html', *sorted(SMM.glob('*-agency/index.html'))]
+LEGACY = SMM / 'Social Media Marketing Agency Brisbane _ SMM _ Digilari Media.html'
+if LEGACY.exists():
+    PAGES.append(LEGACY)
 
-pages = (
-    (repo / "index.html", "./assets/dig-logo-c5.png", "./index.html", "./account-based-marketing/index.html", True, "./assets/"),
-    (repo / "account-based-marketing/index.html", "./dig-logo-c5.png", "../index.html", "./index.html", False, "../assets/"),
-    (source / "Lead Generation Services Brisbane _ Digilari Media.html", "./assets/dig-logo-c5.png", "./Lead%20Generation%20Services%20Brisbane%20_%20Digilari%20Media.html", "./account-based-marketing/index.html", True, "./assets/"),
-    (source / "account-based-marketing/index.html", "./dig-logo-c5.png", "../Lead%20Generation%20Services%20Brisbane%20_%20Digilari%20Media.html", "./index.html", False, "../assets/"),
-)
+for page in PAGES:
+    root_prefix = os.path.relpath(REPO, page.parent) + '/'
+    social_prefix = os.path.relpath(SMM, page.parent) + '/'
+    canonical = SMM / 'index.html' if page == LEGACY else page
+    current_url = social_prefix + canonical.relative_to(SMM).as_posix() if canonical.is_relative_to(SMM) else root_prefix + canonical.relative_to(REPO).as_posix()
+    header = navigation(social_prefix, mockup_root=root_prefix, current_url=current_url)
+    source = page.read_text(encoding='utf-8')
+    source, replacements = re.subn(r'<header\b[^>]*\bid="dig-header"[^>]*>.*?</header>', lambda match: header, source, count=1, flags=re.S)
+    if replacements != 1:
+        raise ValueError(f'Missing shared header in {page}')
+    for extension, tag in (
+        ('css', f'<link rel="stylesheet" href="{root_prefix}assets/dig-shared.css?v={VERSION}">'),
+        ('js', f'<script src="{root_prefix}assets/dig-shared.js?v={VERSION}" defer></script>'),
+    ):
+        pattern = r'\s*<link\b[^>]*href="[^"]*dig-shared\.css(?:\?[^"]*)?"[^>]*>' if extension == 'css' else r'\s*<script\b[^>]*src="[^"]*dig-shared\.js(?:\?[^"]*)?"[^>]*>\s*</script>'
+        source = re.sub(pattern, '', source)
+        closing = '</head>' if extension == 'css' else '</body>'
+        source = source.replace(closing, '\n  ' + tag + '\n' + closing, 1)
+    if page == REPO / 'index.html':
+        source = re.sub(r'\s*<link\b[^>]*href="[^"]*lead-page\.css(?:\?[^"]*)?"[^>]*>', '', source)
+        source = source.replace('</head>', f'\n  <link rel="stylesheet" href="./assets/lead-page.css?v={VERSION}">\n</head>', 1)
+    # Existing body and footer service links also stay within this mockup.
+    service_routes = {
+        'lead-generation': 'index.html',
+        'account-based-marketing': 'account-based-marketing/index.html',
+        'social-media-marketing-smm': 'social-media-marketing/index.html',
+        'linkedin-advertising-agency': 'social-media-marketing/linkedin-advertising-agency/index.html',
+        'instagram-ads-agency': 'social-media-marketing/instagram-ads-agency/index.html',
+        'facebook-advertising-agency': 'social-media-marketing/facebook-advertising-agency/index.html',
+    }
+    for slug, route in service_routes.items():
+        source = source.replace(f'href="https://digilari.com.au/{slug}/"', f'href="{root_prefix}{route}"')
+    page.write_text(source, encoding='utf-8')
+    print(page.relative_to(REPO))
 
-for path, logo, lead, abm, is_lead, assets in pages:
-    html = path.read_text()
-    header = template
-    for key, value in {
-        "LOGO_URL": logo,
-        "LEAD_URL": lead,
-        "ABM_URL": abm,
-        "LEAD_CURRENT": ' aria-current="page"' if is_lead else "",
-        "ABM_CURRENT": "" if is_lead else ' aria-current="page"',
-    }.items():
-        header = header.replace("{{" + key + "}}", value)
-
-    start = html.index("<header", html.index("<body"))
-    end = html.index("</header>", start) + len("</header>")
-    html = html[:start] + header + "\n" + html[end:].lstrip("\n")
-    css = f'<link rel="stylesheet" href="{assets}dig-shared.css?v={version}">'
-    js = f'<script src="{assets}dig-shared.js?v={version}" defer></script>'
-    html = re.sub(r'\s*<link rel="stylesheet" href="[^"]*dig-shared\.css\?v=[^"]+">', "", html)
-    html = html.replace("</head>", "\n  " + css + "\n</head>", 1)
-    html = re.sub(r'\s*<script src="[^"]*dig-shared\.js\?v=[^"]+" defer></script>', "", html)
-    html = html.replace("</body>", "\n  " + js + "\n</body>", 1)
-    if not is_lead:
-        html = re.sub(r"styles\.css\?v=[^\"]+", f"styles.css?v={version}", html)
-        html = re.sub(r"main\.js\?v=[^\"]+", f"main.js?v={version}", html)
-    if is_lead:
-        html = html.replace('href="https://digilari.com.au/lead-generation/#content"', 'href="#content"')
-    path.write_text(html)
-
-source_assets = source / "assets"
-source_assets.mkdir(exist_ok=True)
-for name in ("dig-shared.css", "dig-shared.js", "dig-logo-c5.png"):
-    (source_assets / name).write_bytes((repo / "assets" / name).read_bytes())
-for name in ("styles.css", "main.js"):
-    (source / "account-based-marketing" / name).write_bytes(
-        (repo / "account-based-marketing" / name).read_bytes()
-    )
+(REPO / 'assets/dig-header.html').write_text(navigation('./social-media-marketing/', mockup_root='./', current_url='./index.html') + '\n', encoding='utf-8')
