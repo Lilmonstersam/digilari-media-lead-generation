@@ -8,10 +8,12 @@ Static mockups of the lead generation, account-based marketing and social media 
 index.html                  Lead generation entry point
 account-based-marketing/    Separate ABM landing page, linked from the lead generation mockup
 social-media-marketing/     SMM hub, LinkedIn, Instagram and Facebook advertising subpages
+case-studies/               Case study list (menu: Case Studies) and six social media case study pages
 assets/                     Theme CSS/JS, fonts, images and client logos saved from the live page
 assets/dig-shared.css/js     Shared categorised navigation and mobile accordions
 assets/lead-page.css         Lead-generation typography and form styling
-scripts/sync_header.py      Applies the latest SMM header to all six service pages
+scripts/sync_header.py      Applies the latest SMM header to every mockup page
+scripts/build_case_studies.py  Generates the case study list and detail pages from one data file
 404.html                    Redirects unknown paths back to the mockup
 robots.txt                  Blocks crawling (mockup duplicates live-site content)
 .nojekyll                   Serve files as-is, no Jekyll processing
@@ -48,5 +50,12 @@ To regenerate the SMM content components or platform pages, use these commands f
 ```sh
 python3 social-media-marketing/scripts/update_main_components.py
 python3 social-media-marketing/scripts/build_platform_pages.py
+python3 scripts/build_case_studies.py
 python3 scripts/sync_header.py
 ```
+
+## Case studies
+
+- The Case Studies menu item opens `case-studies/index.html`, which mirrors the live digilari.com.au/case-studies layout with CRO, Paid Ads, SEO and Social Media filters.
+- The six new pages (Streamline Carports, Three Springs Farm Meta Ads, Duracube LinkedIn Ads, CV Sheds, Cummins, Cosmetics Plus) are built from Mars's paid social and Celine's organic notes. The eight existing case studies link to the live site and use its images.
+- Device and phone visuals on the new pages are CSS illustrations. Swap in client site screenshots and get client approval before publishing.

@@ -26,11 +26,6 @@ PAGES = {
         "approach_copy": "LinkedIn is strongest when the offer fits a defined business audience. We map the roles involved in a purchase, develop useful content for each stage and connect campaigns to a credible next step. Account-based campaigns can focus spend on priority organisations, while broader campaigns create new demand.",
         "fit": ["High-value B2B products or services", "Longer sales cycles with several stakeholders", "A clear offer, event, resource or consultation", "A sales team able to follow up and qualify leads"],
         "measurement": "We look beyond clicks and form fills. Useful measures include lead quality, sales-qualified leads, cost per opportunity and pipeline influenced, using CRM feedback where it is available.",
-        "case_title": "Topdrill: LinkedIn Ads for mining recruitment",
-        "case_copy": "Digilari segmented experienced and entry-level candidates and sent each group to tailored landing pages. LinkedIn delivered 2,461 clicks from 85,024 impressions, a 2.89% click-through rate. Google retargeting supported the wider recruitment journey.",
-        "case_label": "Published Digilari case study",
-        "case_url": "https://digilari.com.au/case-studies/topdrill/",
-        "case_link": "Read the Topdrill case study",
         "faqs": [
             ("What does a LinkedIn advertising agency do?", "It plans audiences and offers, builds LinkedIn campaigns and creative, manages spend and reports on the business outcomes produced by the leads."),
             ("Which LinkedIn ad formats do you use?", "The format depends on the goal. Sponsored content, video, document ads and lead generation forms can all have a role; we choose formats after reviewing the audience and offer."),
@@ -54,11 +49,6 @@ PAGES = {
         "approach_copy": "Instagram is a visual platform. The opening seconds, format and destination all matter. We design campaigns around the moment someone first notices your brand, the questions they need answered and the action you want them to take. Meta Ads Manager allows Instagram and Facebook placements to be coordinated when that helps performance.",
         "fit": ["Products or services with a strong visual story", "Enough creative to test more than one angle", "A clear destination for purchase or enquiry", "A willingness to review performance beyond follower growth"],
         "measurement": "We report on the conversion goal first, such as purchases, qualified enquiries or cost per acquisition. Reach, video engagement and click-through rate help explain why performance changes. We also review tracking quality before drawing conclusions.",
-        "case_title": "Instagram campaign case study",
-        "case_copy": "Placeholder for a verified Digilari Instagram Ads campaign. Add an approved client brief, creative examples and measured outcomes before publishing a result claim.",
-        "case_label": "Case study placeholder",
-        "case_url": "../index.html#case-studies",
-        "case_link": "See the published social campaign",
         "faqs": [
             ("What does an Instagram Ads agency manage?", "It plans audiences and creative, builds campaigns in Meta Ads Manager, monitors spend and reports on results such as enquiries or purchases."),
             ("Should we use Reels, Stories or Feed ads?", "That depends on the creative and goal. We test placements and formats rather than assuming one will work for every audience."),
@@ -82,11 +72,6 @@ PAGES = {
         "approach_copy": "Facebook Ads can reach people before they search for your product or service. That makes the offer, creative and follow-up essential. We define the action first, build a campaign structure around it, and review whether Instagram placements should share the same Meta strategy.",
         "fit": ["A clear offer with a defined audience", "A landing page or lead follow-up process", "Creative assets that can be tested and refreshed", "A way to assess lead quality or sales, not just traffic"],
         "measurement": "Depending on the campaign, we report on cost per qualified lead, purchases, cost per acquisition or return on ad spend. We review event tracking and attribution limitations before treating platform numbers as the whole picture.",
-        "case_title": "Facebook campaign case study",
-        "case_copy": "Placeholder for a verified Digilari Facebook Ads campaign. Add an approved client brief, account approach and measured outcomes before publishing a result claim.",
-        "case_label": "Case study placeholder",
-        "case_url": "../index.html#case-studies",
-        "case_link": "See the published social campaign",
         "faqs": [
             ("What does a Facebook advertising agency do?", "It plans and manages Meta campaigns, develops creative, monitors spend and reports on outcomes such as qualified leads or sales."),
             ("Are Facebook and Instagram ads managed together?", "Both use Meta Ads Manager. We can coordinate placements and budgets while still tailoring creative and reporting to how each placement performs."),
@@ -95,6 +80,86 @@ PAGES = {
         ],
     },
 }
+
+
+# Short case study cards. Full details live on the case study pages.
+CASES = {
+    "facebook-advertising-agency": {
+        "heading": "Facebook Ads case study",
+        "cases": [{
+            "featured": True,
+            "label": "Client results",
+            "client": "Streamline Carports · Steel carports, Auckland",
+            "title": "Cutting the cost of every quote request.",
+            "copy": "A refined lookalike audience and durability-led creative turned a costly launch campaign into a steady source of quote requests.",
+            "metric": ("62%", "lower cost per lead on Meta, with enquiries up from about 2 to about 20 a month"),
+            "url": "../../case-studies/streamline-carports-facebook-ads/index.html",
+            "link": "Read the Streamline Carports case study",
+        }],
+    },
+    "instagram-ads-agency": {
+        "heading": "Instagram Ads case study",
+        "cases": [{
+            "featured": True,
+            "label": "Client results",
+            "client": "Three Springs Farm · Organic turmeric, online store",
+            "title": "Instagram placements that out-earned the campaign average.",
+            "copy": "One Meta sales campaign ran across Facebook and Instagram. Instagram placements returned almost double the campaign average.",
+            "metric": ("14.4×", "Meta-attributed return on ad spend from Instagram placements"),
+            "url": "../../case-studies/three-springs-farm/index.html",
+            "link": "Read the Three Springs Farm case study",
+        }],
+    },
+    "linkedin-advertising-agency": {
+        "heading": "LinkedIn Ads case studies",
+        "cases": [{
+            "featured": True,
+            "label": "Client results",
+            "client": "Duracube · Commercial building products",
+            "title": "Video that got architects and builders clicking.",
+            "copy": "Moving from static ads to video Sponsored Content reached commercial construction decision makers at less than half the cost per click.",
+            "metric": ("9×", "higher click-through rate after the switch to video: 0.53% to 4.97%"),
+            "url": "../../case-studies/duracube/index.html",
+            "link": "Read the Duracube case study",
+        }, {
+            "label": "Published Digilari case study",
+            "client": "Topdrill · Mining recruitment",
+            "title": "Segmented LinkedIn campaigns for skilled candidates.",
+            "copy": "Experienced and entry-level candidates each saw tailored ads and landing pages.",
+            "metric": ("2.89%", "LinkedIn click-through rate"),
+            "url": "https://digilari.com.au/case-studies/topdrill/",
+            "link": "Read the Topdrill case study",
+        }],
+    },
+}
+
+def case_card(case: dict, platform: str) -> str:
+    featured = case.get("featured", False)
+    parts = [
+        f'<div class="case-card-top"><span class="case-status">{escape(case["label"])}</span><span class="case-platform">{platform} Ads</span></div>',
+        f'<div><p class="case-client">{escape(case["client"])}</p><h3>{escape(case["title"])}</h3><p>{escape(case["copy"])}</p></div>',
+    ]
+    if case.get("metric"):
+        value, label = case["metric"]
+        parts.append(f'<div class="case-metric"><strong>{escape(value)}</strong><span>{escape(label)}</span></div>')
+    if case.get("table"):
+        head, rows = case["table"]
+        header = "".join(f'<th scope="col">{escape(cell)}</th>' for cell in head)
+        body = "".join(
+            "<tr>" + f'<th scope="row">{escape(row[0])}</th>' + "".join(f"<td>{escape(cell)}</td>" for cell in row[1:]) + "</tr>"
+            for row in rows
+        )
+        parts.append(f'<div class="case-table-wrap"><table class="case-table"><thead><tr>{header}</tr></thead><tbody>{body}</tbody></table></div>')
+    if case.get("changes"):
+        items = "".join(f"<li><strong>{escape(when)}</strong><span>{escape(text)}</span></li>" for when, text in case["changes"])
+        parts.append(f'<p class="case-subhead">{escape(case.get("changes_title", "What we changed"))}</p><ul class="case-changes">{items}</ul>')
+    if case.get("note"):
+        parts.append(f'<p>{escape(case["note"])}</p>')
+    if case.get("source"):
+        parts.append(f'<p class="case-source">{escape(case["source"])}</p>')
+    parts.append(f'<a class="case-link" href="{escape(case["url"], quote=True)}">{escape(case["link"])} ↗</a>')
+    classes = "case-card case-card-featured platform-case" if featured else "case-card platform-case"
+    return f'<article class="{classes}">' + "".join(parts) + "</article>"
 
 
 def header_for(slug: str) -> str:
@@ -124,8 +189,8 @@ def build(slug: str, data: dict) -> str:
         for other, details in PAGES.items() if other != slug
     )
     fit_items = "".join(f"<li>{escape(item)}</li>" for item in data["fit"])
-    published = data["case_label"].startswith("Published")
-    metric = '<div class="case-metric"><strong>2.89%</strong><span>LinkedIn click-through rate in the published Topdrill campaign</span></div>' if published else ""
+    proof = CASES[slug]
+    case_cards = "".join(case_card(case, platform) for case in proof["cases"])
     return f'''<!doctype html>
 <html lang="en-AU">
 <head>
@@ -157,7 +222,7 @@ def build(slug: str, data: dict) -> str:
     <section class="section" id="services" aria-labelledby="services-title"><div class="wrap"><div class="section-heading split-heading"><div><p class="eyebrow">{platform} Ads management</p><h2 id="services-title">What our {platform} advertising service covers.</h2></div><p>Strategy and execution belong together. Each campaign starts with the audience and the action you need, then moves into creative, launch and ongoing improvement.</p></div><div class="service-grid">{cards(data["services"])}</div></div></section>
     <section class="section platform-section" id="approach" aria-labelledby="approach-title"><div class="wrap platform-layout"><div class="platform-copy"><p class="eyebrow">The approach</p><h2 id="approach-title">{escape(data["approach_title"])}</h2><p>{escape(data["approach_copy"])}</p><a class="text-link" href="#enquiry">Talk through your brief ↗</a></div><div class="fit-panel"><span class="fit-label">A strong starting point</span><h3>{platform} Ads may fit when you have:</h3><ul>{fit_items}</ul><p>We check this in the first conversation before recommending a budget or format.</p></div></div></section>
     <section class="section outcomes-section" id="measurement" aria-labelledby="measurement-title"><div class="wrap outcomes-grid"><div><p class="eyebrow">Measurement</p><h2 id="measurement-title">Know what the campaign is <em>actually producing.</em></h2><p>{escape(data["measurement"])}</p><a class="button button-light" href="#enquiry">Request a campaign review ↗</a></div><div class="outcomes-points"><div><span>01</span><h3>Define the result</h3><p>Agree the outcome and conversion action before launch.</p></div><div><span>02</span><h3>Check the signal</h3><p>Review tracking and lead or sales data so the report is useful.</p></div><div><span>03</span><h3>Use the learning</h3><p>Change creative, audience, offer or budget when evidence supports it.</p></div></div></div></section>
-    <section class="section case-section" id="case-studies" aria-labelledby="case-title"><div class="wrap"><div class="section-heading"><p class="eyebrow">Work and proof</p><h2 id="case-title">{escape(data["case_title"])}</h2></div><article class="case-card {'case-card-featured' if published else 'case-card-placeholder'} platform-case"><div class="case-card-top"><span class="case-status">{escape(data["case_label"])}</span><span class="case-platform">{platform} Ads</span></div><p>{escape(data["case_copy"])}</p>{metric}<a class="case-link" href="{escape(data["case_url"], quote=True)}">{escape(data["case_link"])} ↗</a></article></div></section>
+    <section class="section case-section" id="case-studies" aria-labelledby="case-title"><div class="wrap"><div class="section-heading"><p class="eyebrow">Work and proof</p><h2 id="case-title">{escape(proof["heading"])}</h2></div><div class="platform-cases">{case_cards}</div></div></section>
     <section class="section pricing-section" aria-labelledby="pricing-title"><div class="wrap pricing-inner"><div><p class="eyebrow">Budget and scope</p><h2 id="pricing-title">What goes into the investment?</h2></div><p>We separate media spend from strategy, creative and campaign management. The right budget depends on your audience, offer and the amount of testing needed. We will give you a clear scope after reviewing your account and goals. <a href="https://digilari.com.au/our-pricing/">View Digilari pricing ↗</a></p></div></section>
     <section class="section faq-section" id="faq" aria-labelledby="faq-title"><div class="wrap faq-grid"><div><p class="eyebrow">The details</p><h2 id="faq-title">{platform} Ads FAQs.</h2><p>Get answers to the practical questions before you commit to a campaign.</p><a class="text-link" href="#enquiry">Ask us a question ↗</a></div><div class="faq-list">{faqs(data["faqs"])}</div></div></section>
     <section class="section related-section" aria-labelledby="related-title"><div class="wrap"><p class="eyebrow">Explore the channel mix</p><h2 id="related-title">See how the platforms work together.</h2><div class="related-links"><a href="../index.html">Social Media Marketing <span aria-hidden="true">↗</span></a>{sibling_links}</div></div></section>

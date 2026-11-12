@@ -2,7 +2,7 @@
 .dig-header,.dig-header *{box-sizing:border-box}
 .dig-header{position:sticky;top:0;z-index:9998;width:100%;background:#fff;box-shadow:0 5px 22px rgba(33,27,41,.07);font-family:'Red Hat Display','Trebuchet MS',sans-serif}
 .dig-header-inner{width:min(100% - 40px,1240px);min-height:88px;margin:auto;display:flex;align-items:center;gap:26px}
-.dig-brand{flex:none;display:block;width:144px}.dig-brand img{display:block;width:144px;height:auto}
+.dig-brand{flex:none;display:block;width:118px}.dig-brand img{display:block;width:118px;height:auto}
 .dig-primary-nav{display:flex;justify-content:center;align-items:center;flex:1;gap:clamp(14px,1.8vw,27px)}
 .dig-nav-group{position:relative}.dig-nav-top{display:flex;align-items:center;gap:3px}
 .dig-nav-top>a,.dig-nav-top>button,.dig-nav-direct{color:#211b29;text-decoration:none;font:700 15px/1.2 'Red Hat Display',sans-serif;white-space:nowrap}
@@ -28,7 +28,7 @@
 .dig-header .dig-pricing{display:inline-flex;justify-content:center;align-items:center;min-height:46px;padding:10px 22px;border-radius:100px;background:#e41b6f;color:#fff;text-decoration:none;font:800 14px/1.2 'Red Hat Display',sans-serif;white-space:nowrap}.dig-header .dig-pricing:hover{background:#bc155a}
 .dig-menu-toggle,.dig-mobile-meta{display:none}.dig-header :focus-visible{outline:3px solid #fd9b28;outline-offset:3px}
 @media(max-width:1100px){
-.dig-header-inner{min-height:74px}.dig-brand,.dig-brand img{width:137px}.dig-header-meta{display:none}
+.dig-header-inner{min-height:74px}.dig-brand,.dig-brand img{width:108px}.dig-header-meta{display:none}
 .dig-menu-toggle{display:flex;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;margin-left:auto;padding:9px;border:1px solid #d8cfd5;border-radius:7px;background:#fff;color:#211b29;cursor:pointer}
 .dig-menu-toggle span{display:block;width:100%;height:2px;border-radius:2px;background:#211b29;transition:transform .2s,opacity .2s}
 .dig-menu-toggle[aria-expanded=true] span:first-child{transform:translateY(7px) rotate(45deg)}.dig-menu-toggle[aria-expanded=true] span:nth-child(2){opacity:0}.dig-menu-toggle[aria-expanded=true] span:last-child{transform:translateY(-7px) rotate(-45deg)}
@@ -54,3 +54,5 @@
 #dig-header .dig-menu-toggle{background:#fff;color:#211b29}
 @media(min-width:1101px) and (max-width:1240px){.dig-header-inner{gap:16px}.dig-primary-nav{gap:14px}.dig-nav-top>a,.dig-nav-top>button,#dig-header .dig-nav-direct{font-size:14px}.dig-header-meta{gap:12px}.dig-header .dig-phone{font-size:15px}.dig-header .dig-pricing{padding-inline:16px}}
 @media(max-width:1100px){#dig-header .dig-nav-direct{font-size:16px}#dig-header .dig-category-toggle{background:#fbf8f5}}
+
+.dig-nav-direct[aria-current=page]{color:#e41b6f}

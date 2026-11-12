@@ -12,7 +12,7 @@ def navigation(prefix="./", current="", mockup_root=None, current_url=None):
     if mockup_root is not None:
         lead = mockup_root
     home = mockup_root + "index.html" if mockup_root is not None else live
-    logo = (mockup_root if mockup_root is not None else prefix) + "assets/dig-logo-c5.png"
+    logo = (mockup_root if mockup_root is not None else prefix) + "assets/digilari-logo.png"
     social = prefix + "index.html"
     active = current_url or prefix + (current + "/" if current else "") + "index.html"
 
@@ -59,14 +59,16 @@ def navigation(prefix="./", current="", mockup_root=None, current_url=None):
         ("Learning & opportunities", [("Marketing Training Program", live + "digital-marketing-course/"), ("Digilari University Scholarship", live + "digilari-scholarship/")]),
     ])
     contact = f'<div class="dig-submenu" id="dig-menu-contact">{links([("Contact Us", live + "contact-us/"), ("Join Us", live + "join-us/")])}</div>'
+    case_url = mockup_root + "case-studies/index.html" if mockup_root is not None else live + "case-studies/"
+    case_current = ' aria-current="page"' if mockup_root is not None and active.startswith(mockup_root + "case-studies/") else ""
     meta = '<a class="dig-phone" href="tel:1300859358">1300 859 358</a><a class="dig-pricing" href="https://digilari.com.au/our-pricing/">Our Pricing</a>'
     return f'''<header class="dig-header" id="dig-header"><div class="dig-header-inner">
-<a class="dig-brand" href="{home}" aria-label="Digilari Media home"><img src="{logo}" width="286" height="150" alt="Digilari Media"></a>
+<a class="dig-brand" href="{home}" aria-label="Digilari Media home"><img src="{logo}" width="324" height="112" alt="Digilari Media"></a>
 <button class="dig-menu-toggle" type="button" aria-label="Open menu" aria-controls="dig-primary-nav" aria-expanded="false"><span></span><span></span><span></span></button>
 <nav class="dig-primary-nav" id="dig-primary-nav" aria-label="Main navigation">
 {group("Why Digilari", "why", why, live + "why-digilari/")}
 {group("Our Capabilities", "capabilities", capabilities)}
-<a class="dig-nav-direct" href="{live}case-studies/">Case Studies</a>
+<a class="dig-nav-direct" href="{case_url}"{case_current}>Case Studies</a>
 {group("Knowledge Hub", "knowledge", knowledge, live + "articles/")}
 {group("Contact Us", "contact", contact, live + "contact-us/")}
 <div class="dig-mobile-meta">{meta}</div></nav><div class="dig-header-meta">{meta}</div>

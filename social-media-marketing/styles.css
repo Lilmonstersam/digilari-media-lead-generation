@@ -199,3 +199,24 @@ h1 em,h2 em{color:var(--pink);font-style:normal}
 @media(max-width:1100px){.hero-grid{grid-template-columns:minmax(0,1fr) minmax(340px,.9fr);gap:28px}.enquiry-panel{scroll-margin-top:92px}}
 @media(max-width:850px){.hero-grid{grid-template-columns:1fr;gap:32px;padding-block:42px}.hero-copy{max-width:690px}.enquiry-panel{width:100%;max-width:650px;margin-inline:auto}.enquiry-panel h2{font-size:34px}}
 @media(max-width:540px){.hero-grid{padding-block:35px;gap:28px}.enquiry-panel{padding:24px 20px}.enquiry-panel h2{font-size:30px}.enquiry-fields{grid-template-columns:1fr;gap:0}.enquiry-form input,.enquiry-form textarea{font-size:16px}}
+
+/* Client results: metrics on light cards, expandable detail, supporting notes */
+.case-card{justify-content:flex-start;gap:20px}
+.case-card>.case-link{margin-top:auto}
+.case-card:not(.case-card-featured) .case-metric{border-color:var(--line)}
+.case-card:not(.case-card-featured) .case-metric strong{color:var(--pink-dark)}
+.case-card:not(.case-card-featured) .case-metric span{color:var(--body)}
+.case-details{border-bottom:1px solid var(--line)}
+.case-card-featured .case-details{border-color:rgba(255,255,255,.28)}
+.case-details summary{position:relative;list-style:none;cursor:pointer;padding:2px 28px 14px 0;font:800 14px/1.3 'Red Hat Display',sans-serif;color:var(--ink)}
+.case-details summary::-webkit-details-marker{display:none}
+.case-details summary::after{content:'+';position:absolute;right:0;top:-4px;color:var(--pink);font-size:24px;font-weight:500}
+.case-details[open] summary::after{content:'−'}
+.case-card-featured .case-details summary{color:#fff}
+.case-card-featured .case-details summary::after{color:#ffbc84}
+.case-details h4{margin:4px 0 5px;font:800 12px/1.3 'Red Hat Display',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--pink-dark)}
+.case-card-featured .case-details h4{color:#ffc092}
+.case-details p{margin:0 0 14px!important}
+.case-more{max-width:900px;margin:30px 0 0;color:var(--body);font-size:15px;line-height:1.6}
+.case-more a{color:var(--pink-dark);font-weight:800;white-space:nowrap}
+.case-footnote{max-width:900px;margin:12px 0 0;color:#766b73;font-size:12px;line-height:1.55}

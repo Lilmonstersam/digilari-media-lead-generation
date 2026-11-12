@@ -20,4 +20,15 @@ The snapshots include service pages, agency homepages and directories for the br
 
 ## Case-study evidence
 
-The published [Topdrill case study](https://digilari.com.au/case-studies/topdrill/) documents a LinkedIn Ads recruitment campaign with 2,461 clicks from 85,024 impressions and a 2.89% click-through rate. It is the only published Digilari case study found that clearly identifies a social advertising channel and its measured result. Instagram and Facebook case-study slots are explicitly labelled placeholders. They contain no fabricated client names or results.
+Updated 12 November 2026. The case studies now use client results supplied by Mars (paid social, `technical-and-performance/Paid Social Case Studies Streamline Carports, TSF, Duracube, CV Sheds.docx`), checked against Meta Ads, LinkedIn Ads and GA4 through Optmyzr.
+
+| Case study | Placement | Headline figure | Source and checks |
+| --- | --- | --- | --- |
+| Streamline Carports (Meta, leads, NZD) | Hub featured card, Facebook Ads page | Cost per lead NZ$148.22 at launch (May to Oct 2024) to NZ$56.57 (Nov 2025 to Oct 2026), down 62% | Meta Ads. GA4 (property 317723563) shows 80 quote and contact form submissions and 54 phone-link clicks from Meta sessions in the same 12 months; Meta reports 234 Contact-event leads. |
+| Duracube (LinkedIn, traffic, AUD) | Hub card, LinkedIn Ads page | CTR 0.53% to 4.97% (video campaign); 83% more clicks on 24% less spend | LinkedIn Ads. No conversion claim: LinkedIn tracked 1 conversion, and GA4 (381523280) shows an 11% engagement rate for LinkedIn paid sessions, so the case stays on reach and click efficiency. |
+| Three Springs Farm (Meta, ecommerce, AUD) | Hub card, Instagram Ads page | 7.51x Meta-attributed ROAS, $33,062 from $4,404 (Dec 2024 to Feb 2026); Instagram placements 14.4x on $529 | Meta Ads placement breakdown pulled 12 Nov 2026. GA4 (321734613) credits far fewer purchases to Meta-tagged sessions (about 50, last-click), so revenue is labelled Meta-attributed. Ad-copy health claims are deliberately not repeated on the page. |
+| Topdrill (LinkedIn) | Supporting link on hub, second card on LinkedIn page | 2.89% CTR | Published [Topdrill case study](https://digilari.com.au/case-studies/topdrill/). |
+
+CV Sheds was not used: it is a traffic campaign without verified enquiries, and its Meta Lead event fires on page load. Organic case studies (Cummins, Cosmetics Plus) are pending further detail from Celine.
+
+Still to confirm before publishing: client approval to name Streamline Carports, Three Springs Farm and Duracube; quotes or sales from Streamline enquiries; Duracube video creative names and screenshots.

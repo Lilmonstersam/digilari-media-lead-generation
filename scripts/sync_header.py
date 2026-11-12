@@ -9,8 +9,8 @@ SMM = REPO / 'social-media-marketing'
 sys.path.insert(0, str(SMM / 'scripts'))
 from components import navigation
 
-VERSION = '20261005smm'
-PAGES = [REPO / 'index.html', REPO / 'account-based-marketing/index.html', SMM / 'index.html', *sorted(SMM.glob('*-agency/index.html'))]
+VERSION = '20261112cs2'
+PAGES = [REPO / 'index.html', REPO / 'account-based-marketing/index.html', SMM / 'index.html', *sorted(SMM.glob('*-agency/index.html')), REPO / 'case-studies/index.html', *sorted(page for page in REPO.glob('case-studies/*/index.html') if 'http-equiv="refresh"' not in page.read_text(encoding='utf-8'))]
 LEGACY = SMM / 'Social Media Marketing Agency Brisbane _ SMM _ Digilari Media.html'
 if LEGACY.exists():
     PAGES.append(LEGACY)
@@ -44,6 +44,7 @@ for page in PAGES:
         'linkedin-advertising-agency': 'social-media-marketing/linkedin-advertising-agency/index.html',
         'instagram-ads-agency': 'social-media-marketing/instagram-ads-agency/index.html',
         'facebook-advertising-agency': 'social-media-marketing/facebook-advertising-agency/index.html',
+        'case-studies': 'case-studies/index.html',
     }
     for slug, route in service_routes.items():
         source = source.replace(f'href="https://digilari.com.au/{slug}/"', f'href="{root_prefix}{route}"')
