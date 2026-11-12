@@ -31,6 +31,7 @@ jobs:
           cp -r assets _site/assets
           cp -r account-based-marketing _site/account-based-marketing
           cp -r social-media-marketing _site/social-media-marketing
+          cp -r case-studies _site/case-studies
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
