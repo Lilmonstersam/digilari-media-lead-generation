@@ -74,6 +74,7 @@ CASES = [
         "excerpt": "Streamline Carports builds steel carports for Auckland homeowners. A refined Meta audience and durability-led creative cut its cost per lead by 62% while enquiries grew tenfold.",
         "screen": ("Facebook lead ads", "−62%", "cost per lead"),
         "phone": ("Streamline Carports", "Auckland's strongest carports", "Get Quote"),
+        "challenge_ad": ("IMAGES/ads/streamline-carports-ad.jpg", "Streamline Carports Facebook ad: Durable and low-maintenance carports, Auckland's strongest carports with a 10-year structural warranty, with a Get quote button", "Top ad (Carports | Oct 2025 | Ad 2): 156 leads at NZ$52.40 each over the last 12 months"),
         "facts": [("Industry", "Steel carports"), ("Location", "Auckland, New Zealand"), ("Channels", "Facebook and Instagram (Meta Ads)"), ("Objective", "Quote and contact enquiries"), ("Period", "May 2024 to October 2026")],
         "about": "Streamline Carports designs and builds steel carports for homeowners across Auckland, with sustainable PurlinDek steel roofing and a 10-year structural warranty. Meta Ads is one of its main sources of quote requests, sending people to the carports page to request a quote or get in touch.",
         "challenge": [
@@ -120,7 +121,7 @@ CASES = [
         "about": "Nestled in Australia’s Northern Rivers, Three Springs Farm is a certified organic producer with a focus on medicinal herbs and sustainable farming. Their flagship product, Complete•3 Turmeric Liquid Extract, reflects their commitment to a “food as medicine” philosophy, bringing together traditional knowledge and scientific backing to promote health. Digilari manages its paid advertising on both Google and Meta: Google captures people already searching, while Meta finds new customers likely to buy.",
         "challenge": [
             ("Google Ads", "Three Springs Farm faced substantial obstacles in digital advertising, primarily due to high conversion costs that restricted ad visibility and effectiveness. The challenge was twofold: enhancing ad delivery to reach a wider yet targeted audience within a tight budget, and addressing gaps in online customer engagement."),
-            ("Meta Ads", "With a budget of about $300 a month, Meta needed to bring in new customers profitably, not just traffic. The previous Meta campaign was already returning 6.92x, so the task was to keep finding new buyers across Australia without letting the cost per purchase climb."),
+            ("Meta Ads", "With a fixed budget of $300 a month, Meta needed to bring in new customers profitably, not just traffic. The previous Meta campaign was already returning 6.92x, so the task was to keep finding new buyers across Australia without letting the cost per purchase climb."),
         ],
         "solution_groups": [
             ("Google Ads", "Digilari embarked on a comprehensive optimisation strategy to tackle these challenges:", [
@@ -129,7 +130,7 @@ CASES = [
                 ("search", "Performance Max campaigns", "Launched through a newly established Google Merchant Centre account, allowing products to appear in Google Shopping searches. This integration used machine learning to distribute ads across multiple channels, enhancing targeting and efficiency."),
             ]),
             ("Meta Ads", "On Meta, Digilari focused spend on people close to buying and kept testing the creative:", [
-                ("people", "Near-buyer lookalike audience", "Built the main audience from a lookalike of people who added to cart but didn't buy, layered with health, wellness, organic food, fitness and gardening interests. Recent buyers were excluded so budget went to new customers. This ad set took 85% of spend and delivered 291 orders at 7.53x."),
+                ("people", "Near-buyer audiences", "The main prospecting ad set targeted health, wellness, organic food, fitness and gardening interests, with recent buyers excluded so budget went to new customers. It was refined over time into a 3% lookalike of people who added to cart but didn't buy, and took 85% of spend for 291 orders at 7.53x."),
                 ("image", "Credibility and offer-led creative", "Single image ads and a 10-card carousel led with the product's credentials (certified organic, grown on the family farm) and the subscription and free-delivery offers. The carousel returned 10.2x."),
                 ("calendar", "Seasonal Christmas push", "A separate, time-limited ad set promoted the returning 500ml bottle for Christmas, optimised to checkouts. It delivered 47 orders at 7.38x."),
                 ("layers", "Facebook and Instagram together", "The campaign ran across both placements and let Meta allocate spend. Instagram took 12% of spend and returned 14.4x, against 6.5x on Facebook. A September 2025 creative refresh with subscription-saving messaging reached 16.5x."),
@@ -156,6 +157,18 @@ CASES = [
                     ("Best month", "April 2025, with 44 orders and $4,735 in revenue from $299 in spend (15.8x)."),
                 ],
                 "counters": [("7.51×", "Return on Ad Spend", "Meta-attributed"), ("338", "Online Orders", "in 15 months"), ("+9%", "Average Order Value", "vs previous campaign")],
+                "ads": [
+                    ("IMAGES/ads/three-springs-farm-carousel-ad.jpg", "Three Springs Farm carousel ad for Complete 3 Turmeric Liquid Extract with an Order now button", "Carousel ad (AD4): 71 orders at 10.2x"),
+                    ("IMAGES/ads/three-springs-farm-refreshed-ad.jpg", "Three Springs Farm refreshed ad offering up to 25% off with a monthly subscription and free shipping", "Refreshed ad, September 2025: 18 orders at 16.5x"),
+                ],
+                "timeline": [
+                    ("Ongoing", "Monthly budget held at $300, with daily budgets reviewed and adjusted weekly."),
+                    ("Jun 2025", "Reviewed targeting, budgets and creative, and adjusted Advantage+ creative settings."),
+                    ("Aug 2025", "Fixed audience targeting after a Meta audience update removed some segments, and enabled Advantage+ creative adjustments."),
+                    ("Sep 2025", "Refreshed the creative with subscription-saving messaging."),
+                    ("Nov 2025", "Created a 3% lookalike audience and narrowed the broad targeting."),
+                    ("Feb 2026", "Moved to a new campaign that also retargets people who added to cart without buying in the previous 90 days."),
+                ],
                 "table": (["Metric (AUD)", "Previous campaign: Jul to Nov 2024", "Sales campaign: Dec 2024 to Feb 2026"], [
                     ["Spend", "$1,352", "$4,404"], ["Orders", "104", "338"], ["Revenue", "$9,364", "$33,062"], ["Revenue per month", "$1,873", "$2,204"],
                     ["Return on ad spend", "6.92x", "7.51x"], ["Cost per order", "$13.00", "$13.03"], ["Average order value", "$90.04", "$97.82"], ["Conversion rate", "3.49%", "3.96%"]]),
@@ -198,7 +211,7 @@ CASES = [
                 ("chart", "Performance Tracking & Analytics", "Set up comprehensive tracking through Google Analytics 4 (GA4) to monitor traffic acquisition, user behaviour, and engagement metrics. Regularly reviewed and optimised campaigns based on performance data, focusing on high-performing channels and addressing underperforming areas."),
             ]),
             ("LinkedIn Ads", "On LinkedIn, Digilari changed the format, the bidding and the targeting:", [
-                ("video", "Video-first creative", "Replaced static and carousel ads with single video Sponsored Content, then rotated new videos through the campaign. The best videos reached a 6.2% to 7.5% click-through rate."),
+                ("video", "Video-first creative", "Replaced static and carousel ads with single video Sponsored Content: specifier-focused videos promoting the 15-year warranty and architect-ready tools such as Revit BIM models, then launch videos for the new First Nations Range. The best videos reached a 6.2% to 7.5% click-through rate."),
                 ("target", "Click-focused bidding", "Switched from conversion bidding, which had too little data to learn from, to landing page click optimisation so LinkedIn could find the people most likely to visit."),
                 ("people", "Senior decision-maker targeting", "Targeted 17 job titles at Senior, Manager, Director, Partner and Owner level, layered with relevant skills, industries and fields of study such as architecture. Companies with 1 to 10 staff and competitor employees were excluded."),
                 ("layers", "Sector pages and tighter seniority", "In October 2026, targeting moved to job function and Manager-and-above seniority at companies with 51 or more staff, sending people to industrial, commercial and sports facility pages."),
@@ -226,6 +239,11 @@ CASES = [
                     ("Sector pages", "the refined October 2026 campaign is running at a 3.89% click-through rate and $0.72 per click."),
                 ],
                 "counters": [("4.97%", "Click-Through Rate", "from 0.53%"), ("−58%", "Cost per Click", "vs static ads"), ("+83%", "Website Clicks", "on 24% less spend")],
+                "ads": [
+                    ("IMAGES/ads/duracube-specifier-video.jpg", "DuraCube LinkedIn video ad: DuraCube sets the standard in bathroom joinery systems, with an Access Our Specifier Resources call to action", "Specifier resources video: 7.5% click-through rate at $0.86 per click"),
+                    ("IMAGES/ads/duracube-first-nations-range-video.jpg", "DuraCube LinkedIn video ad launching the First Nations Range, a DuraCube x Blaklash collaboration", "First Nations Range launch video: 6.2% click-through rate at $0.66 per click, 1,956 clicks"),
+                    ("IMAGES/ads/duracube-blaklash-video.jpg", "DuraCube x Blaklash LinkedIn video ad: The Future of Built Environments is Here", "Launch teaser video: 5.4% click-through rate at $0.66 per click"),
+                ],
                 "table": (["Metric (AUD)", "Static + carousel: Aug 2024 to Sep 2025", "Video + sector pages: Sep 2025 to Nov 2026"], [
                     ["Spend", "$7,716", "$5,860"], ["Impressions", "750,232", "150,182"], ["Clicks", "3,961", "7,237"],
                     ["Click-through rate", "0.53%", "4.82%"], ["Cost per click", "$1.95", "$0.81"]]),
@@ -248,6 +266,7 @@ CASES = [
         "excerpt": "CV Sheds builds custom steel sheds across Central Victoria. A seasonal Meta series with tight local targeting brought in more relevant visitors at a 41% lower cost per click.",
         "screen": ("Meta traffic campaign", "−41%", "cost per click"),
         "phone": ("CV Sheds", "Summer doesn't wait for you to be ready.", "See Details"),
+        "challenge_ad": ("IMAGES/ads/cv-sheds-ad.jpg", "CV Sheds Facebook ad: Summer doesn't wait for you to be ready. Don't face summer without the right shed, with a See details button", "Summer Campaign single image ad: 3.12% click-through rate at $0.18 per click"),
         "facts": [("Industry", "Custom steel sheds"), ("Location", "Central Victoria"), ("Channels", "Facebook and Instagram (Meta Ads)"), ("Objective", "Website visits ahead of the build season"), ("Period", "February to November 2026")],
         "about": "CV Sheds designs and builds custom steel sheds across Central Victoria. Google Ads captures people already searching for a shed. Meta's job is different: reach property owners earlier and bring them to the website before the busy summer build season.",
         "challenge": [
@@ -456,7 +475,8 @@ def result_groups(case: dict):
     if case.get("result_groups"):
         return case["result_groups"]
     return [{"eyebrow": "Results", "title": case["results_title"], "items": case["results"], "note": case.get("results_note"),
-             "counters": case["counters"], "table": case.get("table"), "source": case.get("source")}]
+             "counters": case["counters"], "table": case.get("table"), "source": case.get("source"),
+             "ads": case.get("ads"), "timeline": case.get("timeline")}]
 
 
 def table_html(table) -> str:
@@ -497,8 +517,14 @@ def detail_page(case: dict) -> str:
     challenge = "".join(
         f"<p><strong>{escape(item[0])}:</strong> {escape(item[1])}</p>" if isinstance(item, tuple) else f"<p>{escape(item)}</p>"
         for item in case["challenge"])
-    challenge_visual = (f'<img class="cs-challenge-image" src="{escape(resolve(case["challenge_image"], prefix), quote=True)}" alt="{name} website on a mobile phone" loading="lazy">'
-                        if case.get("challenge_image") else phone(case))
+    if case.get("challenge_ad"):
+        src, alt, caption = case["challenge_ad"]
+        challenge_visual = (f'<figure class="cs-ad cs-ad-feature"><img src="{escape(resolve(src, prefix), quote=True)}" alt="{escape(alt, quote=True)}" loading="lazy">'
+                            f'<figcaption>{escape(caption)}</figcaption></figure>')
+    elif case.get("challenge_image"):
+        challenge_visual = f'<img class="cs-challenge-image" src="{escape(resolve(case["challenge_image"], prefix), quote=True)}" alt="{name} website on a mobile phone" loading="lazy">'
+    else:
+        challenge_visual = phone(case)
     solutions = ""
     for heading, intro, items in solution_groups(case):
         boxes = "".join(
@@ -514,10 +540,20 @@ def detail_page(case: dict) -> str:
             f'<div class="cs-counter"><span class="cs-counter-circle">{escape(v)}</span><strong>{escape(label)}</strong><span>{escape(sub)}</span></div>'
             for v, label, sub in group["counters"])
         table = table_html(group["table"]) if group.get("table") else ""
+        timeline = ""
+        if group.get("timeline"):
+            steps = "".join(f"<li><strong>{escape(when)}</strong><span>{escape(text)}</span></li>" for when, text in group["timeline"])
+            timeline = f'<div class="cs-timeline-block"><h3>What changed and when</h3><ol class="cs-timeline">{steps}</ol></div>'
+        ads = ""
+        if group.get("ads"):
+            figures = "".join(
+                f'<figure class="cs-ad"><img src="{escape(resolve(src, prefix), quote=True)}" alt="{escape(alt, quote=True)}" loading="lazy"><figcaption>{escape(caption)}</figcaption></figure>'
+                for src, alt, caption in group["ads"])
+            ads = f'<div class="cs-ads-block"><h3>{escape(group.get("ads_title", "The ads behind the results"))}</h3><div class="cs-ads cs-ads-{len(group["ads"])}">{figures}</div></div>'
         source = f'<p class="cs-source">{escape(group["source"])}</p>' if group.get("source") else ""
         results += (f'<div class="cs-result-group"><div class="cs-results-grid"><div class="cs-results-copy"><p class="cs-results-eyebrow">{escape(group["eyebrow"])}</p>'
                     f'<h2>{escape(group["title"])}</h2><ul>{items}</ul>{note}</div>'
-                    f'<div class="cs-counters cs-counters-{len(group["counters"])}">{counters}</div></div>{table}{source}</div>')
+                    f'<div class="cs-counters cs-counters-{len(group["counters"])}">{counters}</div></div>{ads}{timeline}{table}{source}</div>')
     services = case.get("services") or [case["service"]]
     actions = "".join(
         f'<a class="button{"" if i == 0 else " button-outline"}" href="{escape(url, quote=True)}">Explore {escape(label)} <span aria-hidden="true">↗</span></a>'

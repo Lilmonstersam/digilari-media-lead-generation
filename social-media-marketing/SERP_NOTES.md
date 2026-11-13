@@ -32,3 +32,5 @@ Updated 12 November 2026. The case studies now use client results supplied by Ma
 CV Sheds was not used: it is a traffic campaign without verified enquiries, and its Meta Lead event fires on page load. Organic case studies (Cummins, Cosmetics Plus) are pending further detail from Celine.
 
 Still to confirm before publishing: client approval to name Streamline Carports, Three Springs Farm and Duracube; quotes or sales from Streamline enquiries; Duracube video creative names and screenshots.
+
+Update 13 November 2026: Mars supplied ad screenshots (saved in `seo/images/smm-campaign-posts`, optimised copies in `case-studies/images/ads/`) and answered her "To confirm" items. Three Springs Farm's Meta budget was fixed at $300 a month, with the change timeline now shown on the page. Duracube's top LinkedIn videos promoted specifier resources and the First Nations Range launch. CV Sheds' Summer Campaign has produced one contact form submission since launch, so its page stays a traffic case study.
