@@ -32,6 +32,7 @@ jobs:
           cp -r account-based-marketing _site/account-based-marketing
           cp -r social-media-marketing _site/social-media-marketing
           cp -r case-studies _site/case-studies
+          cp -r live-export _site/live-export
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
