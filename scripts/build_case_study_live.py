@@ -145,9 +145,9 @@ def build(case):
     return {
         **ids,
         "slug": slug,
-        "subtitle": case["subtitle"],
+        "subtitle_text": case["subtitle"],
         "tag": {"text": "Paid Social", "url": SITE + "/social-media-marketing-smm/"},
-        "about": esc(case["about"]),
+        "about_text": esc(case["about"]),
         "facts_html": f'<div class="dcs"><dl class="dcs-facts">{facts}</dl></div>',
         "challenge_html": challenge,
         "sol1_label": groups[0][0],
