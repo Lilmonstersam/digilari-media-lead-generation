@@ -15,3 +15,7 @@ Files for updating digilari.com.au/lead-generation/ (post 18955) in Elementor. B
 - `lead-generation-page.css`: the mockup's lead generation styles for the page's Custom CSS. Header rules are left out because the site header is a global template.
 
 Links to the ABM page point to `#audit` until that page is live.
+
+# Live export: social media platform pages
+
+`scripts/build_platform_export.py <slug> <platform>` exports a platform mockup (for example `facebook-advertising-agency facebook`) to `<slug>-blocks.json` and `<slug>-page.css`. Each block goes in its own full-width Elementor container wrapped in the `wrapper` div. The CSS is the live SMM page CSS plus `platform.css` scoped under `.dsmm`.
