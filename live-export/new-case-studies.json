@@ -1,0 +1,370 @@
+{
+ "css_extra": ".dcs-note{margin:0;padding:18px 22px;border-left:4px solid var(--pink);background:var(--cream);border-radius:0 14px 14px 0;color:#4b4550;font-size:15px;line-height:1.6}",
+ "cases": [
+  {
+   "mockup_slug": "streamline-carports-facebook-ads",
+   "slug": "streamline-carports",
+   "title": "Streamline Carports",
+   "categories": [
+    176,
+    178
+   ],
+   "excerpt": "Streamline Carports builds steel carports for Auckland homeowners. A refined Meta audience and durability-led creative cut its cost per lead by 62% while enquiries grew tenfold.",
+   "description": "How Digilari cut Streamline Carports' Meta cost per lead by 62% and grew enquiries from about 2 to about 20 a month.",
+   "subtitle": "Cutting the Cost of Every Quote Request with Meta Lead Ads",
+   "tag": {
+    "text": "Paid Social",
+    "url": "https://digilari.com.au/social-media-marketing-smm/"
+   },
+   "about_heading": "About Streamline Carports",
+   "about": "Streamline Carports designs and builds steel carports for homeowners across Auckland, with sustainable PurlinDek steel roofing and a 10-year structural warranty. Meta Ads is one of its main sources of quote requests, sending people to the carports page to request a quote or get in touch.",
+   "facts_html": "<div class=\"dcs\"><dl class=\"dcs-facts\"><div><dt>Industry</dt><dd>Steel carports</dd></div><div><dt>Location</dt><dd>Auckland, New Zealand</dd></div><div><dt>Channels</dt><dd>Facebook and Instagram (Meta Ads)</dd></div><div><dt>Objective</dt><dd>Quote and contact enquiries</dd></div><div><dt>Period</dt><dd>May 2024 to October 2026</dd></div></dl></div>",
+   "challenge_html": "<p>Streamline needed a steady flow of quote requests from Meta at a cost that made sense for a considered home purchase.</p><p>At launch (May to October 2024), a broad Auckland campaign was costing NZ$148 per enquiry and bringing in about 2 enquiries a month. The audience was too wide, and the creative wasn't giving homeowners a clear reason to choose Streamline over a cheaper alternative.</p>",
+   "challenge_caption": "Top ad (Carports | Oct 2025 | Ad 2): 156 leads at NZ$52.40 each over the last 12 months",
+   "solutions_intro": "<p>Digilari rebuilt the audience and creative, then kept moving budget towards what the results supported:</p>",
+   "boxes": [
+    {
+     "icon": "fas fa-bullseye",
+     "title": "Refined lookalike audience",
+     "description": "<ul><li>Built an ad set from a 1% lookalike of recent website visitors, layered with homeowner, home improvement and vehicle-owner interests.</li><li>Run side by side with the original broad audience, it cost 42% less per lead (NZ$61.44 against NZ$105.49).</li></ul>"
+    },
+    {
+     "icon": "fas fa-image",
+     "title": "Durability-led creative",
+     "description": "<ul><li>Rebuilt the ads around what matters to carport buyers: strength, rust protection, PurlinDek steel roofing and a 10-year structural warranty.</li><li>Meta's flexible format tested three images with several headlines and primary texts in each ad.</li></ul>"
+    },
+    {
+     "icon": "fas fa-chart-line",
+     "title": "Budget that follows results",
+     "description": "<ul><li>Paused the weaker broad ad set and moved its budget to the refined one.</li><li>When GA4 showed a separate traffic campaign's visitors weren't engaging, 70% of its budget moved into lead generation.</li></ul>"
+    },
+    {
+     "icon": "fas fa-sync-alt",
+     "title": "Creative fatigue monitoring",
+     "description": "<ul><li>Tracked cost per lead month by month and refreshed copy and creative when results slipped, rather than letting ageing ads absorb more budget.</li></ul>"
+    }
+   ],
+   "results": {
+    "eyebrow": "Results",
+    "title": "Lower Cost per Lead, Ten Times the Enquiries",
+    "editor": "<ol><li><span style=\"font-weight: bold;\">Cost per lead:</span><ul><li>Down 62%, from NZ$148.22 at launch to NZ$56.57 over the last 12 months.</li></ul></li><li><span style=\"font-weight: bold;\">Lead volume:</span><ul><li>From about 2 enquiries a month at launch to about 20 a month, with 234 Meta-reported leads in the last 12 months.</li></ul></li><li><span style=\"font-weight: bold;\">Click efficiency:</span><ul><li>Click-through rate up from 1.14% to 1.56%, and cost per click down from NZ$1.09 to NZ$0.82.</li></ul></li><li><span style=\"font-weight: bold;\">Website activity:</span><ul><li>GA4 recorded 80 quote and contact form submissions and 54 phone-link clicks from Meta visitors over the same 12 months.</li></ul></li></ol>",
+    "counters": [
+     {
+      "prefix": "−",
+      "ending_number": "62",
+      "suffix": "%",
+      "label": "Cost per Lead",
+      "sub": "vs launch"
+     },
+     {
+      "prefix": "",
+      "ending_number": "10",
+      "suffix": "×",
+      "label": "Monthly Enquiries",
+      "sub": "vs launch"
+     },
+     {
+      "prefix": "+",
+      "ending_number": "37",
+      "suffix": "%",
+      "label": "Click-Through Rate",
+      "sub": "vs launch"
+     }
+    ]
+   },
+   "card": [
+    {
+     "value": "−62%",
+     "label": "Cost per Lead",
+     "note": "vs launch"
+    },
+    {
+     "value": "10×",
+     "label": "Monthly Enquiries",
+     "note": "vs launch"
+    },
+    {
+     "value": "+37%",
+     "label": "Click-Through Rate",
+     "note": "vs launch"
+    }
+   ],
+   "extra_html": "<div class=\"dcs\"><div class=\"dcs-wrap\"><div class=\"dcs-block\"><h3>Before and after</h3><div class=\"dcs-table\"><table><thead><tr><th scope=\"col\">Metric (NZD)</th><th scope=\"col\">Launch: May to Oct 2024</th><th scope=\"col\">Last 12 months: Nov 2025 to Oct 2026</th></tr></thead><tbody><tr><th scope=\"row\">Spend</th><td>$1,630</td><td>$13,237</td></tr><tr><th scope=\"row\">Impressions</th><td>131,369</td><td>1,031,819</td></tr><tr><th scope=\"row\">Click-through rate</th><td>1.14%</td><td>1.56%</td></tr><tr><th scope=\"row\">Cost per click</th><td>$1.09</td><td>$0.82</td></tr><tr><th scope=\"row\">Leads</th><td>11</td><td>234</td></tr><tr><th scope=\"row\">Cost per lead</th><td>$148.22</td><td>$56.57</td></tr><tr><th scope=\"row\">Leads per month</th><td>About 2</td><td>About 20</td></tr></tbody></table></div><p class=\"dcs-source\">Sources: Meta Ads (via Optmyzr) and GA4. Figures in NZD. Meta-reported leads use the pixel Contact event, which fires when someone submits a quote or contact enquiry.</p></div><div class=\"dcs-actions\"><a class=\"dcs-btn\" href=\"https://digilari.com.au/social-media-marketing-smm/facebook-advertising-agency/\">Explore Facebook Advertising <span aria-hidden=\"true\">↗</span></a><a class=\"dcs-link\" href=\"https://digilari.com.au/case-studies/\">All case studies <span aria-hidden=\"true\">↗</span></a></div></div></div>",
+   "images": {
+    "hero": "streamline-carports-hero.png",
+    "challenge": "streamline-carports-ad.jpg"
+   }
+  },
+  {
+   "mockup_slug": "cv-sheds-meta-ads",
+   "slug": "cv-sheds",
+   "title": "CV Sheds",
+   "categories": [
+    176,
+    178
+   ],
+   "excerpt": "CV Sheds builds custom steel sheds across Central Victoria. A seasonal Meta series with tight local targeting brought in more relevant visitors at a 41% lower cost per click.",
+   "description": "How a seasonal Meta campaign for CV Sheds lifted click-through rate by 49% and cut cost per click by 41% across Central Victoria.",
+   "subtitle": "A Seasonal Meta Campaign That Reaches Shed Buyers Before the Busy Season",
+   "tag": {
+    "text": "Paid Social",
+    "url": "https://digilari.com.au/social-media-marketing-smm/"
+   },
+   "about_heading": "About CV Sheds",
+   "about": "CV Sheds designs and builds custom steel sheds across Central Victoria. Google Ads captures people already searching for a shed. Meta's job is different: reach property owners earlier and bring them to the website before the busy summer build season.",
+   "facts_html": "<div class=\"dcs\"><dl class=\"dcs-facts\"><div><dt>Industry</dt><dd>Custom steel sheds</dd></div><div><dt>Location</dt><dd>Central Victoria</dd></div><div><dt>Channels</dt><dd>Facebook and Instagram (Meta Ads)</dd></div><div><dt>Objective</dt><dd>Website visits ahead of the build season</dd></div><div><dt>Period</dt><dd>February to November 2026</dd></div></dl></div>",
+   "challenge_html": "<p>The client's brief was a single line: plan a January campaign along the lines of “New Year, New Shed”, with the concept left to Digilari.</p><p>The campaign needed to bring low-cost, relevant visitors to the site from the right towns, without spending on Melbourne or audiences unlikely to build a shed. The New Year's campaign finished at a 1.85% click-through rate and $0.44 per landing page view.</p>",
+   "challenge_caption": "Summer Campaign single image ad: 3.12% click-through rate at $0.18 per click",
+   "solutions_intro": "<p>Digilari turned the brief into a seasonal series and tightened every part of the targeting:</p>",
+   "boxes": [
+    {
+     "icon": "fas fa-calendar-alt",
+     "title": "A seasonal campaign series",
+     "description": "<ul><li>New Year's ran in three creative phases from February to May 2026.</li><li>Summer Campaign 2026 followed in August with the same “prepare before the season” angle: protect vehicles, machinery, boats and caravans from summer sun and storms.</li></ul>"
+    },
+    {
+     "icon": "fas fa-map-marker-alt",
+     "title": "Local targeting around 22 towns",
+     "description": "<ul><li>Ads reached people within 25 miles of 22 Central Victorian towns, including Bendigo, Ballarat, Castlemaine and Echuca, with Melbourne excluded.</li><li>Interests matched shed buyers: farming and machinery, boating, caravans and 4WD, DIY and home improvement, plus the Recently moved life event.</li></ul>"
+    },
+    {
+     "icon": "fas fa-image",
+     "title": "Three formats tested",
+     "description": "<ul><li>Single image, carousel and video ads launched side by side.</li><li>The single image won clearly (3.12% click-through rate at $0.18 per click), and Meta put 81% of September's budget behind it.</li></ul>"
+    },
+    {
+     "icon": "fas fa-shield-alt",
+     "title": "Cleaner placements and tracking",
+     "description": "<ul><li>Audience Network placements were excluded, Advantage+ creative enhancements were switched on, and UTM parameters were standardised so GA4 attributes Meta visits correctly.</li></ul>"
+    }
+   ],
+   "results": {
+    "eyebrow": "Results",
+    "title": "Cheaper, More Relevant Visits Ahead of Summer",
+    "editor": "<ol><li><span style=\"font-weight: bold;\">Click-through rate:</span><ul><li>2.75%, against 1.85% on the previous seasonal campaign.</li></ul></li><li><span style=\"font-weight: bold;\">Cost per click:</span><ul><li>$0.22, down from $0.37.</li></ul></li><li><span style=\"font-weight: bold;\">Cost per landing page view:</span><ul><li>$0.37, down from $0.44, across 2,190 landing page views.</li></ul></li><li><span style=\"font-weight: bold;\">Best month:</span><ul><li>September 2026, at a 3.63% click-through rate, $0.16 per click and $0.30 per landing page view.</li></ul></li></ol>",
+    "counters": [
+     {
+      "prefix": "+",
+      "ending_number": "49",
+      "suffix": "%",
+      "label": "Click-Through Rate",
+      "sub": "vs previous campaign"
+     },
+     {
+      "prefix": "−",
+      "ending_number": "41",
+      "suffix": "%",
+      "label": "Cost per Click",
+      "sub": "vs previous campaign"
+     },
+     {
+      "prefix": "−",
+      "ending_number": "16",
+      "suffix": "%",
+      "label": "Cost per Page View",
+      "sub": "vs previous campaign"
+     }
+    ]
+   },
+   "card": [
+    {
+     "value": "+49%",
+     "label": "Click-Through Rate",
+     "note": "vs previous campaign"
+    },
+    {
+     "value": "−41%",
+     "label": "Cost per Click",
+     "note": "vs previous campaign"
+    },
+    {
+     "value": "−16%",
+     "label": "Cost per Page View",
+     "note": "vs previous campaign"
+    }
+   ],
+   "extra_html": "<div class=\"dcs\"><div class=\"dcs-wrap\"><div class=\"dcs-block\"><p class=\"dcs-note\">This is an awareness and website traffic campaign. Enquiries are captured mainly through Google Ads, so this case study reports visits rather than leads.</p></div><div class=\"dcs-block\"><h3>Before and after</h3><div class=\"dcs-table\"><table><thead><tr><th scope=\"col\">Metric (AUD)</th><th scope=\"col\">New Year's Phase 3: May 2026</th><th scope=\"col\">Summer Campaign: 6 Aug to 11 Nov 2026</th></tr></thead><tbody><tr><th scope=\"row\">Spend</th><td>$945</td><td>$812</td></tr><tr><th scope=\"row\">Impressions</th><td>138,374</td><td>135,766</td></tr><tr><th scope=\"row\">Clicks</th><td>2,558</td><td>3,737</td></tr><tr><th scope=\"row\">Click-through rate</th><td>1.85%</td><td>2.75%</td></tr><tr><th scope=\"row\">Cost per click</th><td>$0.37</td><td>$0.22</td></tr><tr><th scope=\"row\">Landing page views</th><td>2,137</td><td>2,190</td></tr><tr><th scope=\"row\">Cost per landing page view</th><td>$0.44</td><td>$0.37</td></tr></tbody></table></div><p class=\"dcs-source\">Source: Meta Ads (via Optmyzr). Figures in AUD.</p></div><div class=\"dcs-actions\"><a class=\"dcs-btn\" href=\"https://digilari.com.au/social-media-marketing-smm/facebook-advertising-agency/\">Explore Facebook Advertising <span aria-hidden=\"true\">↗</span></a><a class=\"dcs-link\" href=\"https://digilari.com.au/case-studies/\">All case studies <span aria-hidden=\"true\">↗</span></a></div></div></div>",
+   "images": {
+    "hero": "cv-sheds-hero.png",
+    "challenge": "cv-sheds-ad.jpg"
+   }
+  },
+  {
+   "mockup_slug": "cummins-social-media",
+   "slug": "cummins",
+   "title": "Cummins",
+   "categories": [
+    178
+   ],
+   "excerpt": "Cummins had no established social presence in the Philippines. Digilari built an industry-focused Facebook programme that educated buyers, supported the local sales team and stayed on brand.",
+   "description": "How Digilari built and managed an industry-focused Facebook presence for Cummins Power Generation in the Philippines.",
+   "subtitle": "Building a Social Presence for a Global Power Brand in the Philippines",
+   "tag": {
+    "text": "Social Media",
+    "url": "https://digilari.com.au/social-media-marketing-smm/"
+   },
+   "about_heading": "About Cummins",
+   "about": "Cummins is a global power technology company. Its Philippine power generation team needed a Facebook presence that would introduce Cummins gensets to the businesses that rely on dependable power and support the local sales team's priorities.",
+   "facts_html": "<div class=\"dcs\"><dl class=\"dcs-facts\"><div><dt>Industry</dt><dd>Power generation</dd></div><div><dt>Market</dt><dd>Philippines</dd></div><div><dt>Channel</dt><dd>Facebook (organic)</dd></div><div><dt>Focus</dt><dd>Brand awareness, product education and sales support</dd></div></dl></div>",
+   "challenge_html": "<p>Cummins didn't have an established social media presence in the Philippines. It wanted to build brand awareness across key industries, particularly commercial, data centre and healthcare, while also supporting its sales efforts.</p><p>Creative freedom was limited by established global brand templates and guidelines, so the content had to stand out through its topics and relevance rather than a new look.</p>",
+   "challenge_caption": "Illustration based on the campaign messaging",
+   "solutions_intro": "<p>Digilari built a content programme around the industries that buy gensets and refined it with data:</p>",
+   "boxes": [
+    {
+     "icon": "fas fa-layer-group",
+     "title": "Industry-specific content streams",
+     "description": "<ul><li>Content started with commercial businesses such as petrol stations, fast-food franchises, banks, malls and supermarkets, plus agricultural businesses that need power for irrigation, aerators and ventilation.</li><li>Data centres and healthcare facilities were added as the programme grew.</li></ul>"
+    },
+    {
+     "icon": "fas fa-comments",
+     "title": "Education alongside product",
+     "description": "<ul><li>Posts explained topics such as the difference between a Cummins Power Generation genset and an OEM genset powered by Cummins.</li><li>Value-added, educational content ran alongside product and sales posts, so the page never felt like a sales pitch.</li></ul>"
+    },
+    {
+     "icon": "fas fa-calendar-alt",
+     "title": "A data-led posting schedule",
+     "description": "<ul><li>Daily single-image posts first established when target audiences were most active.</li><li>Content topics were then tested against publishing days over three months, setting the posting schedule and message exposure for the following quarters.</li></ul>"
+    },
+    {
+     "icon": "fas fa-video",
+     "title": "Formats that kept pace with the platform",
+     "description": "<ul><li>Reels were introduced as Meta began favouring video, keeping the content fresh and reducing creative fatigue while staying within Cummins' brand guidelines.</li></ul>"
+    }
+   ],
+   "results": {
+    "eyebrow": "Results",
+    "title": "A Consistent, Industry-Focused Presence the Local Team Valued",
+    "editor": "<ol><li><span style=\"font-weight: bold;\">New presence:</span><ul><li>Established and managed Cummins Power Generation's Facebook presence in the Philippines.</li></ul></li><li><span style=\"font-weight: bold;\">Wider reach into industry:</span><ul><li>Content expanded from general awareness to commercial, agricultural, data centre and healthcare audiences.</li></ul></li><li><span style=\"font-weight: bold;\">A tested schedule:</span><ul><li>A structured, data-backed posting schedule used through to the end of the engagement.</li></ul></li><li><span style=\"font-weight: bold;\">Client feedback:</span><ul><li>The Philippine team reported being happy with the campaign throughout, with no requests to change direction.</li></ul></li></ol>",
+    "counters": [
+     {
+      "prefix": "",
+      "ending_number": "4",
+      "suffix": "",
+      "label": "Industry Audiences",
+      "sub": "commercial, agriculture, data centres, healthcare"
+     },
+     {
+      "prefix": "",
+      "ending_number": "3",
+      "suffix": " mo",
+      "label": "Content Testing",
+      "sub": "topics against publishing days"
+     }
+    ]
+   },
+   "card": [
+    {
+     "value": "4",
+     "label": "Industry Audiences",
+     "note": "content streams"
+    },
+    {
+     "value": "3 mo",
+     "label": "Content Testing",
+     "note": "before scheduling"
+    },
+    {
+     "value": "Reels",
+     "label": "Video Format",
+     "note": "added as Meta shifted"
+    }
+   ],
+   "extra_html": "<div class=\"dcs\"><div class=\"dcs-wrap\"><div class=\"dcs-block\"><p class=\"dcs-source\">Results are based on campaign management records and client feedback.</p></div><div class=\"dcs-actions\"><a class=\"dcs-btn\" href=\"https://digilari.com.au/social-media-marketing-smm/\">Explore Social Media Marketing <span aria-hidden=\"true\">↗</span></a><a class=\"dcs-link\" href=\"https://digilari.com.au/case-studies/\">All case studies <span aria-hidden=\"true\">↗</span></a></div></div></div>",
+   "images": {
+    "hero": "cummins-hero.png",
+    "challenge": "cummins-post.png"
+   }
+  },
+  {
+   "mockup_slug": "cosmetics-plus-social-media",
+   "slug": "cosmetics-plus",
+   "title": "Cosmetics Plus",
+   "categories": [
+    178
+   ],
+   "excerpt": "Cosmetics Plus had duplicate Facebook pages and a backlog of negative reviews. Digilari consolidated its presence, set up a review process and built content that kept local stores top of mind.",
+   "description": "How Digilari consolidated Cosmetics Plus' Facebook pages, managed its reputation and grew engagement on Facebook and Instagram.",
+   "subtitle": "Cleaning Up and Growing a Beauty Retailer's Social Presence",
+   "tag": {
+    "text": "Social Media",
+    "url": "https://digilari.com.au/social-media-marketing-smm/"
+   },
+   "about_heading": "About Cosmetics Plus",
+   "about": "Cosmetics Plus is a beauty retailer offering cosmetics, self-care products and in-store piercing services through its local stores. Social media supports both its online reputation and foot traffic to each store.",
+   "facts_html": "<div class=\"dcs\"><dl class=\"dcs-facts\"><div><dt>Industry</dt><dd>Beauty and piercing retail</dd></div><div><dt>Channels</dt><dd>Facebook and Instagram, with Pinterest maintained</dd></div><div><dt>Focus</dt><dd>Community management, reputation and local store visits</dd></div></dl></div>",
+   "challenge_html": "<p>When Cosmetics Plus came on board it had very little social media presence. Its Facebook page was largely inactive, and there were several duplicate pages and negative reviews that needed attention.</p><p>Before the brand could grow online, its digital footprint had to be cleaned up, its pages consolidated and its customer feedback addressed.</p>",
+   "challenge_caption": "Illustration based on the campaign messaging",
+   "solutions_intro": "<p>Digilari fixed the foundations first, then built a content programme on top of them:</p>",
+   "boxes": [
+    {
+     "icon": "fas fa-layer-group",
+     "title": "Page clean-up and consolidation",
+     "description": "<ul><li>Claimed the duplicate and existing public business pages and consolidated them into one official Facebook page.</li></ul>"
+    },
+    {
+     "icon": "fas fa-shield-alt",
+     "title": "Reputation management",
+     "description": "<ul><li>Responded to the backlog of reviews and complaints, de-escalated where possible, and wrote a standard process for answering every type of review, from positive feedback to complaints.</li></ul>"
+    },
+    {
+     "icon": "fas fa-comments",
+     "title": "Consistent community replies",
+     "description": "<ul><li>Created scripts for frequently asked questions and repeat enquiries, so replies stayed consistent across platforms before chatbots were widely available.</li></ul>"
+    },
+    {
+     "icon": "fas fa-image",
+     "title": "Content beyond promotions",
+     "description": "<ul><li>Aligned social content with the promotional calendar, then filled the gaps with self-care tips, piercing education and product features.</li><li>Reels moved from slideshows to creative videos with transitions, movement and music.</li></ul>"
+    },
+    {
+     "icon": "fas fa-map-marker-alt",
+     "title": "Focused channels and local promotion",
+     "description": "<ul><li>Narrowed active posting from Facebook, Instagram, X and Pinterest to Facebook and Instagram, while keeping Pinterest boards up to date.</li><li>Paid piercing promotions reached people within 20 km of each store.</li></ul>"
+    }
+   ],
+   "results": {
+    "eyebrow": "Results",
+    "title": "One Official Page, a Clear Process and More Engaging Content",
+    "editor": "<ol><li><span style=\"font-weight: bold;\">Consolidated presence:</span><ul><li>Duplicate pages resolved into one official Facebook page.</li></ul></li><li><span style=\"font-weight: bold;\">Reputation:</span><ul><li>The backlog of reviews and complaints answered, with a documented process for handling feedback from then on.</li></ul></li><li><span style=\"font-weight: bold;\">Community management:</span><ul><li>Consistent, scripted replies to common questions across platforms.</li></ul></li><li><span style=\"font-weight: bold;\">Content:</span><ul><li>Reworked Reels performed well with the algorithm and increased reach and impressions.</li></ul></li></ol>",
+    "counters": [
+     {
+      "prefix": "",
+      "ending_number": "1",
+      "suffix": "",
+      "label": "Official Page",
+      "sub": "from several duplicates"
+     },
+     {
+      "prefix": "",
+      "ending_number": "20",
+      "suffix": " km",
+      "label": "Local Targeting",
+      "sub": "around each store"
+     }
+    ]
+   },
+   "card": [
+    {
+     "value": "1",
+     "label": "Official Page",
+     "note": "from duplicates"
+    },
+    {
+     "value": "2",
+     "label": "Core Channels",
+     "note": "Facebook and Instagram"
+    },
+    {
+     "value": "20 km",
+     "label": "Local Reach",
+     "note": "around each store"
+    }
+   ],
+   "extra_html": "<div class=\"dcs\"><div class=\"dcs-wrap\"><div class=\"dcs-block\"><p class=\"dcs-source\">Results are based on campaign management records.</p></div><div class=\"dcs-actions\"><a class=\"dcs-btn\" href=\"https://digilari.com.au/social-media-marketing-smm/\">Explore Social Media Marketing <span aria-hidden=\"true\">↗</span></a><a class=\"dcs-link\" href=\"https://digilari.com.au/case-studies/\">All case studies <span aria-hidden=\"true\">↗</span></a></div></div></div>",
+   "images": {
+    "hero": "cosmetics-plus-hero.png",
+    "challenge": "cosmetics-plus-post.png"
+   }
+  }
+ ]
+}
