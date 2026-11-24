@@ -119,6 +119,9 @@ def css_bundle(soup_text):
             elif rule.type == "at-rule":
                 out.append(tinycss2.serialize([rule]))
     css = "\n".join(out)
+    # the live theme renders the page header without the mockup's helper class
+    css = css.replace("body.elementor-page-18955 .page-header.dlg-compact-header", ".page-header.dlg-compact-header")
+    css = css.replace(".page-header.dlg-compact-header", "body.elementor-page-18955 .page-header")
     # The page nav is sticky through its Elementor container (see live-export/README.md)
     css += """
 /* ---- live site integration ---- */
