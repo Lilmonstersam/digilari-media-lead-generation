@@ -15,6 +15,9 @@
 .dsmm .enquiry-panel .wpcf7-response-output{margin:12px 0 0;font-size:13px}
 .dsmm .enquiry-panel .wpcf7-not-valid-tip{font-size:12px}
 .dsmm .page-nav{position:static;top:auto}
-.dsmm-sticky{position:sticky!important;top:var(--dsmm-header-offset,0px);z-index:500}
-.admin-bar .dsmm-sticky{top:calc(var(--dsmm-header-offset,0px) + 32px)}
+/* Sticky in-page nav below the theme's fixed header. The theme hides horizontal overflow on html/body, which disables position:sticky, so clip it instead on this page only. */
+html:has(.dsmm-sticky),body:has(.dsmm-sticky){overflow-x:clip;overflow-y:visible}
+.dsmm-sticky{position:sticky!important;top:100px;z-index:500}
+.admin-bar .dsmm-sticky{top:132px}
+@media(max-width:1024px){.dsmm-sticky,.admin-bar .dsmm-sticky{top:80px}}
 @media(max-width:760px){.dsmm{padding-bottom:0}}
