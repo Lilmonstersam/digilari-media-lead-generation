@@ -21,12 +21,13 @@ SITE = "https://digilari.com.au"
 HUB = SITE + "/social-media-marketing-smm/"
 CF7 = '[contact-form-7 id="3128" html_class="dsmm-cf7"]'
 
-# Pages that are not live yet point to the SMM hub's platform list
 LINKS = {
     "../index.html": HUB,
-    "../linkedin-advertising-agency/index.html": HUB + "#platforms",
-    "../instagram-ads-agency/index.html": HUB + "#platforms",
+    "../linkedin-advertising-agency/index.html": HUB + "linkedin-advertising-agency/",
+    "../instagram-ads-agency/index.html": HUB + "instagram-ads-agency/",
     "../facebook-advertising-agency/index.html": HUB + "facebook-advertising-agency/",
+    "../../case-studies/three-springs-farm/index.html": SITE + "/case-studies/three-springs-farm/",
+    "../../case-studies/duracube/index.html": SITE + "/case-studies/duracube/",
 }
 
 
@@ -62,9 +63,10 @@ def main(slug, platform):
     intro = main_el.find(class_="enquiry-intro")
     intro.string = f"Share your details and we’ll be in touch to discuss the right {topic[0].upper() + topic[1:]} approach for your business."
 
-    # Case study pages are not live yet: offer a conversation instead
+    # Case studies without a live page yet: offer a conversation instead
     for link in main_el.select("a.case-link"):
-        if "case-studies/" in link.get("href", ""):
+        href = link.get("href", "")
+        if "case-studies/" in href and href not in LINKS and not href.startswith("http"):
             link["href"] = "#enquiry"
             link.string = "Discuss a similar campaign ↗"
 
