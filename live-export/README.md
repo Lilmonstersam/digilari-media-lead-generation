@@ -6,3 +6,12 @@ Files for rebuilding digilari.com.au/social-media-marketing-smm/ in Elementor fr
 - `smm-page.css`: the mockup styles scoped under `.dsmm`, for the page's Custom CSS.
 
 Links to pages that are not live yet (platform subpages, new case studies) point to `#enquiry` or the existing case study URLs.
+
+# Live export: Lead generation page
+
+Files for updating digilari.com.au/lead-generation/ (post 18955) in Elementor. Built by `scripts/build_lead_export.py` from `index.html`.
+
+- `lead-generation-plan.json`: settings changes for existing Elementor widgets and containers, new service boxes, new `dlg-*` sections as HTML blocks with their position in the page, elements to delete, and logo files to upload to the media library (`{{LOGO:file}}` placeholders).
+- `lead-generation-page.css`: the mockup's lead generation styles for the page's Custom CSS. Header rules are left out because the site header is a global template.
+
+Links to the ABM page point to `#audit` until that page is live.
