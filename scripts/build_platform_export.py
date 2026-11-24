@@ -28,6 +28,8 @@ LINKS = {
     "../facebook-advertising-agency/index.html": HUB + "facebook-advertising-agency/",
     "../../case-studies/three-springs-farm/index.html": SITE + "/case-studies/three-springs-farm/",
     "../../case-studies/duracube/index.html": SITE + "/case-studies/duracube/",
+    "../../case-studies/streamline-carports-facebook-ads/index.html": SITE + "/case-studies/streamline-carports/",
+    "../../case-studies/cv-sheds-meta-ads/index.html": SITE + "/case-studies/cv-sheds/",
 }
 
 
