@@ -21,3 +21,6 @@ html:has(.dsmm-sticky),body:has(.dsmm-sticky){overflow-x:clip;overflow-y:visible
 .admin-bar .dsmm-sticky{top:132px}
 @media(max-width:1024px){.dsmm-sticky,.admin-bar .dsmm-sticky{top:80px}}
 @media(max-width:760px){.dsmm{padding-bottom:0}}
+
+/* hero enquiry button: the form sits beside it on desktop */
+@media(min-width:851px){.dsmm .hero-actions .button[href="#enquiry"]{display:none}}

@@ -22,6 +22,9 @@ html:has(.dsmm-sticky),body:has(.dsmm-sticky){overflow-x:clip;overflow-y:visible
 @media(max-width:1024px){.dsmm-sticky,.admin-bar .dsmm-sticky{top:80px}}
 @media(max-width:760px){.dsmm{padding-bottom:0}}
 
+/* hero enquiry button: the form sits beside it on desktop */
+@media(min-width:851px){.dsmm .hero-actions .button[href="#enquiry"]{display:none}}
+
 /* ---- platform page styles (platform.css) ---- */
 .dsmm.platform-page{--platform-accent:#e41b6f}
 .dsmm.platform-page[data-platform="linkedin"]{--platform-accent:#275d87}
