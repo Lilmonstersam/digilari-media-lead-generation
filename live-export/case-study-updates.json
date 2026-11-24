@@ -1,0 +1,168 @@
+{
+ "css": "/* ---- merged case study additions ---- */\n.dcs{--pink:#e41b6f;--pink-dark:#b5124f;--ink:#211b29;--line:#eadfe4;--cream:#fbf8f5;color:var(--ink);font-family:'Red Hat Text',sans-serif}\n.dcs-facts{margin:22px 0 0;padding:22px 24px;border:1px solid var(--line);border-radius:18px;background:var(--cream)}\n.dcs-facts div{padding:10px 0;border-bottom:1px solid var(--line)}\n.dcs-facts div:first-child{padding-top:0}\n.dcs-facts div:last-child{padding-bottom:0;border:0}\n.dcs-facts dt{color:var(--pink-dark);font:800 11px/1.3 'Red Hat Display',sans-serif;letter-spacing:.1em;text-transform:uppercase}\n.dcs-facts dd{margin:3px 0 0;font:700 16px/1.35 'Red Hat Display',sans-serif;color:var(--ink)}\n.dcs-pill{display:block;width:max-content;margin:28px auto 6px;padding:7px 16px;border-radius:99px;background:#fff;color:var(--pink-dark);font:800 13px/1.2 'Red Hat Display',sans-serif;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 0 0 1px var(--line)}\n.dcs-wrap{max-width:1140px;margin:0 auto;padding:0 20px 70px}\n.dcs h3{margin:0 0 22px;font:800 22px/1.2 'Red Hat Display',sans-serif;color:var(--ink)}\n.dcs-block{margin-top:56px}\n.dcs-block:first-child{margin-top:0}\n.dcs-ads{display:grid;gap:28px;align-items:start}\n.dcs-ads-2{grid-template-columns:repeat(2,minmax(0,300px))}\n.dcs-ads-3{grid-template-columns:repeat(3,minmax(0,1fr))}\n.dcs-ad{margin:0;display:flex;flex-direction:column;align-items:center;gap:12px}\n.dcs-ad img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:14px;background:#fff;box-shadow:0 18px 40px rgba(33,27,41,.12)}\n.dcs-ad figcaption{max-width:340px;color:#6f6470;font-size:13px;line-height:1.5;text-align:center}\n.dcs-timeline{margin:0;padding:0;list-style:none;border-left:2px solid #f3c9da}\n.dcs-timeline li{position:relative;display:grid;grid-template-columns:110px 1fr;gap:16px;margin:0;padding:0 0 18px 24px;color:#4b4550;font-size:15px;line-height:1.6}\n.dcs-timeline li::before{content:\"\";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--pink)}\n.dcs-timeline li strong{color:var(--pink-dark);font:800 14px/1.6 'Red Hat Display',sans-serif}\n.dcs-table{overflow-x:auto;border:1px solid var(--line);border-radius:14px}\n.dcs-table table{width:100%;min-width:560px;margin:0;border:0;border-collapse:collapse;font-size:15px}\n.dcs-table th,.dcs-table td{padding:13px 18px;text-align:left;border:0;border-bottom:1px solid var(--line);background:none}\n.dcs-table tr:last-child>*{border-bottom:0}\n.dcs-table thead th{background:var(--cream);color:var(--pink-dark);font:800 12px/1.3 'Red Hat Display',sans-serif;letter-spacing:.06em;text-transform:uppercase}\n.dcs-table tbody th{font-weight:700;color:var(--ink)}\n.dcs-table td{color:#4b4550;font-variant-numeric:tabular-nums}\n.dcs-table td:last-child{color:var(--ink);font-weight:800}\n.dcs-source{margin:18px 0 0;color:#7b6f78;font-size:13px;line-height:1.6}\n.dcs-actions{display:flex;flex-wrap:wrap;align-items:center;gap:20px 24px;margin-top:48px}\n.dcs-btn{display:inline-flex;align-items:center;gap:14px;min-height:52px;padding:14px 26px;border-radius:999px;background:var(--pink);color:#fff!important;text-decoration:none;font:800 15px/1.25 'Red Hat Display',sans-serif;border:2px solid var(--pink);transition:background .2s}\n.dcs-btn:hover{background:var(--pink-dark);border-color:var(--pink-dark)}\n.dcs-btn-outline{background:#fff;color:var(--pink-dark)!important}\n.dcs-btn-outline:hover{background:#fbf0f5}\n.dcs-link{color:var(--pink-dark)!important;font:800 15px/1.3 'Red Hat Display',sans-serif;text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:3px}\n@media(max-width:1000px){.dcs-ads-3{grid-template-columns:repeat(2,minmax(0,1fr))}}\n@media(max-width:640px){.dcs-ads-2,.dcs-ads-3{grid-template-columns:1fr;max-width:360px;margin-inline:auto}.dcs-timeline li{grid-template-columns:1fr;gap:2px}}",
+ "cases": [
+  {
+   "post": 22606,
+   "subtitle": "Achieving Significant Growth Across Organic Search and LinkedIn",
+   "last_tag": "408126d2",
+   "about": "Duracube, a leading provider of wet area joinery solutions, engaged in a comprehensive digital marketing strategy to enhance its online presence, drive traffic, and increase conversions. Its buyers include architects, designers, builders and project managers. This case study outlines the challenges faced, solutions implemented, and results achieved across organic search, the website and LinkedIn Ads.",
+   "logo": "5739a2c8",
+   "challenge": "7c06ab11",
+   "sol_intro": "7cac88bd",
+   "sol_first": "405596be",
+   "sol_last": "1fd2e7e9",
+   "results": "3df020f9",
+   "results_heading": "52a25feb",
+   "slug": "duracube",
+   "tag": {
+    "text": "Paid Social",
+    "url": "https://digilari.com.au/social-media-marketing-smm/"
+   },
+   "facts_html": "<div class=\"dcs\"><dl class=\"dcs-facts\"><div><dt>Industry</dt><dd>Wet area joinery for commercial projects</dd></div><div><dt>Location</dt><dd>Australia</dd></div><div><dt>Channels</dt><dd>SEO, CRO and LinkedIn Ads</dd></div><div><dt>Objective</dt><dd>Organic visibility, conversions and specifier reach</dd></div></dl></div>",
+   "challenge_html": "<ol><li><span style=\"font-weight: bold;\">Keyword Targeting and SEO Optimisation</span>: Duracube needed to optimise its content for a diverse set of keywords related to bathroom and toilet partitions, compact laminate, and accessibility standards, ensuring visibility across various search terms.</li><li><span style=\"font-weight: bold;\">Technical SEO and Site Structure</span>: Ensuring the website was technically sound, with optimised meta tags, schema markup, and a logical site structure to improve search engine rankings and user experience.</li><li><span style=\"font-weight: bold;\">Content and Local SEO</span>: Creating relevant content that addresses the needs of local audiences in multiple regions, including Melbourne, Sydney, Brisbane, and Adelaide.</li><li><span style=\"font-weight: bold;\">Analytics and Performance Monitoring</span>: Implementing effective tracking and analysis of web traffic and user behaviour to continually refine the marketing strategy.</li><li><span style=\"font-weight: bold;\">Reaching Specifiers on LinkedIn</span>: Duracube wanted to promote its Specifier Portal to senior people in architecture, design and building management. Its first LinkedIn campaigns used static and carousel ads optimised for website conversions, running at a 0.53% click-through rate and $1.95 per click.</li></ol>",
+   "sol1_label": "Search and website",
+   "sol2": {
+    "label": "LinkedIn Ads",
+    "intro": "<p>On LinkedIn, Digilari changed the format, the bidding and the targeting:</p>",
+    "boxes": [
+     {
+      "icon": "fas fa-video",
+      "title": "Video-first creative",
+      "description": "<ul><li>Replaced static and carousel ads with single video Sponsored Content: specifier-focused videos promoting the 15-year warranty and architect-ready tools such as Revit BIM models, then launch videos for the new First Nations Range.</li><li>The best videos reached a 6.2% to 7.5% click-through rate.</li></ul>"
+     },
+     {
+      "icon": "fas fa-bullseye",
+      "title": "Click-focused bidding",
+      "description": "<ul><li>Switched from conversion bidding, which had too little data to learn from, to landing page click optimisation so LinkedIn could find the people most likely to visit.</li></ul>"
+     },
+     {
+      "icon": "fas fa-users",
+      "title": "Senior decision-maker targeting",
+      "description": "<ul><li>Targeted 17 job titles at Senior, Manager, Director, Partner and Owner level, layered with relevant skills, industries and fields of study such as architecture.</li><li>Companies with 1 to 10 staff and competitor employees were excluded.</li></ul>"
+     },
+     {
+      "icon": "fas fa-layer-group",
+      "title": "Sector pages and tighter seniority",
+      "description": "<ul><li>In October 2026, targeting moved to job function and Manager-and-above seniority at companies with 51 or more staff, sending people to industrial, commercial and sports facility pages.</li></ul>"
+     }
+    ]
+   },
+   "results1_eyebrow": "Results: Search and website",
+   "results2": {
+    "eyebrow": "Results: LinkedIn Ads",
+    "title": "Nine Times the Click-Through Rate at Less Than Half the Cost per Click",
+    "editor": "<ol><li><span style=\"font-weight: bold;\">Click-through rate:</span><ul><li>Up from 0.53% to 4.97% on the video campaign.</li></ul></li><li><span style=\"font-weight: bold;\">Cost per click:</span><ul><li>Down 58%, from $1.95 to $0.82.</li></ul></li><li><span style=\"font-weight: bold;\">Website clicks:</span><ul><li>83% more clicks (7,237 against 3,961) on 24% less spend ($5,860 against $7,716).</li></ul></li><li><span style=\"font-weight: bold;\">Sector pages:</span><ul><li>The refined October 2026 campaign is running at a 3.89% click-through rate and $0.72 per click.</li></ul></li></ol>",
+    "counters": [
+     {
+      "prefix": "",
+      "ending_number": "4.97",
+      "suffix": "%",
+      "label": "Click-Through Rate",
+      "sub": "from 0.53%"
+     },
+     {
+      "prefix": "−",
+      "ending_number": "58",
+      "suffix": "%",
+      "label": "Cost per Click",
+      "sub": "vs static ads"
+     },
+     {
+      "prefix": "+",
+      "ending_number": "83",
+      "suffix": "%",
+      "label": "Website Clicks",
+      "sub": "on 24% less spend"
+     }
+    ]
+   },
+   "extra_html": "<div class=\"dcs\"><div class=\"dcs-wrap\"><div class=\"dcs-block\"><h3>The ads behind the results</h3><div class=\"dcs-ads dcs-ads-3\"><figure class=\"dcs-ad\"><img src=\"{{AD:duracube-specifier-video.jpg}}\" alt=\"DuraCube LinkedIn video ad: DuraCube sets the standard in bathroom joinery systems, with an Access Our Specifier Resources call to action\" loading=\"lazy\" width=\"760\" height=\"761\"><figcaption>Specifier resources video: 7.5% click-through rate at $0.86 per click</figcaption></figure><figure class=\"dcs-ad\"><img src=\"{{AD:duracube-first-nations-range-video.jpg}}\" alt=\"DuraCube LinkedIn video ad launching the First Nations Range, a DuraCube x Blaklash collaboration\" loading=\"lazy\" width=\"760\" height=\"844\"><figcaption>First Nations Range launch video: 6.2% click-through rate at $0.66 per click, 1,956 clicks</figcaption></figure><figure class=\"dcs-ad\"><img src=\"{{AD:duracube-blaklash-video.jpg}}\" alt=\"DuraCube x Blaklash LinkedIn video ad: The Future of Built Environments is Here\" loading=\"lazy\" width=\"760\" height=\"846\"><figcaption>Launch teaser video: 5.4% click-through rate at $0.66 per click</figcaption></figure></div></div><div class=\"dcs-block\"><h3>Before and after</h3><div class=\"dcs-table\"><table><thead><tr><th scope=\"col\">Metric (AUD)</th><th scope=\"col\">Static + carousel: Aug 2024 to Sep 2025</th><th scope=\"col\">Video + sector pages: Sep 2025 to Nov 2026</th></tr></thead><tbody><tr><th scope=\"row\">Spend</th><td>$7,716</td><td>$5,860</td></tr><tr><th scope=\"row\">Impressions</th><td>750,232</td><td>150,182</td></tr><tr><th scope=\"row\">Clicks</th><td>3,961</td><td>7,237</td></tr><tr><th scope=\"row\">Click-through rate</th><td>0.53%</td><td>4.82%</td></tr><tr><th scope=\"row\">Cost per click</th><td>$1.95</td><td>$0.81</td></tr></tbody></table></div><p class=\"dcs-source\">Source: LinkedIn Ads (via Optmyzr). Figures in AUD. The 4.97% click-through rate is the video campaign alone; the table also includes the sector pages campaign.</p></div><div class=\"dcs-actions\"><a class=\"dcs-btn\" href=\"https://digilari.com.au/seo-agency-brisbane/\">Explore SEO <span aria-hidden=\"true\">↗</span></a><a class=\"dcs-btn dcs-btn-outline\" href=\"https://digilari.com.au/social-media-marketing-smm/linkedin-advertising-agency/\">Explore LinkedIn Advertising <span aria-hidden=\"true\">↗</span></a><a class=\"dcs-link\" href=\"https://digilari.com.au/case-studies/\">All case studies <span aria-hidden=\"true\">↗</span></a></div></div></div>",
+   "ads": [
+    "duracube-specifier-video.jpg",
+    "duracube-first-nations-range-video.jpg",
+    "duracube-blaklash-video.jpg"
+   ]
+  },
+  {
+   "post": 22662,
+   "subtitle": "Harvesting Growth with Targeted Paid Ads Across Google and Meta",
+   "last_tag": "74484699",
+   "about": "Nestled in Australia’s Northern Rivers, Three Springs Farm is a certified organic producer with a focus on medicinal herbs and sustainable farming. Their flagship product, Complete•3 Turmeric Liquid Extract, reflects their commitment to a “food as medicine” philosophy, bringing together traditional knowledge and scientific backing to promote health. Digilari manages its paid advertising on both Google and Meta: Google captures people already searching, while Meta finds new customers likely to buy.",
+   "logo": "48ebc179",
+   "challenge": "3aa7d62c",
+   "sol_intro": "65099bd7",
+   "sol_first": "273d5d07",
+   "sol_last": "5f5d4016",
+   "results": "59d4b034",
+   "results_heading": "5513a219",
+   "slug": "three-springs-farm",
+   "tag": {
+    "text": "Paid Social",
+    "url": "https://digilari.com.au/social-media-marketing-smm/"
+   },
+   "facts_html": "<div class=\"dcs\"><dl class=\"dcs-facts\"><div><dt>Industry</dt><dd>Certified organic herbs</dd></div><div><dt>Location</dt><dd>Northern Rivers, Australia</dd></div><div><dt>Channels</dt><dd>Google Ads and Meta Ads (Facebook and Instagram)</dd></div><div><dt>Objective</dt><dd>Online sales</dd></div></dl></div>",
+   "challenge_html": "<ol><li><span style=\"font-weight: bold;\">Google Ads</span>: Three Springs Farm faced substantial obstacles in digital advertising, primarily due to high conversion costs that restricted ad visibility and effectiveness. The challenge was twofold: enhancing ad delivery to reach a wider yet targeted audience within a tight budget, and addressing gaps in online customer engagement.</li><li><span style=\"font-weight: bold;\">Meta Ads</span>: With a fixed budget of $300 a month, Meta needed to bring in new customers profitably, not just traffic. The previous Meta campaign was already returning 6.92x, so the task was to keep finding new buyers across Australia without letting the cost per purchase climb.</li></ol>",
+   "sol1_label": "Google Ads",
+   "sol2": {
+    "label": "Meta Ads",
+    "intro": "<p>On Meta, Digilari focused spend on people close to buying and kept testing the creative:</p>",
+    "boxes": [
+     {
+      "icon": "fas fa-users",
+      "title": "Near-buyer audiences",
+      "description": "<ul><li>The main prospecting ad set targeted health, wellness, organic food, fitness and gardening interests, with recent buyers excluded so budget went to new customers.</li><li>It was refined over time into a 3% lookalike of people who added to cart but didn't buy, and took 85% of spend for 291 orders at 7.53x.</li></ul>"
+     },
+     {
+      "icon": "fas fa-image",
+      "title": "Credibility and offer-led creative",
+      "description": "<ul><li>Single image ads and a 10-card carousel led with the product's credentials (certified organic, grown on the family farm) and the subscription and free-delivery offers.</li><li>The carousel returned 10.2x.</li></ul>"
+     },
+     {
+      "icon": "fas fa-calendar-alt",
+      "title": "Seasonal Christmas push",
+      "description": "<ul><li>A separate, time-limited ad set promoted the returning 500ml bottle for Christmas, optimised to checkouts.</li><li>It delivered 47 orders at 7.38x.</li></ul>"
+     },
+     {
+      "icon": "fas fa-layer-group",
+      "title": "Facebook and Instagram together",
+      "description": "<ul><li>The campaign ran across both placements and let Meta allocate spend.</li><li>Instagram took 12% of spend and returned 14.4x, against 6.5x on Facebook.</li><li>A September 2025 creative refresh with subscription-saving messaging reached 16.5x.</li></ul>"
+     }
+    ]
+   },
+   "results1_eyebrow": "Results: Google Ads",
+   "results2": {
+    "eyebrow": "Results: Meta Ads",
+    "title": "Meta-Attributed Sales at a 7.5x Return on Ad Spend",
+    "editor": "<ol><li><span style=\"font-weight: bold;\">Revenue:</span><ul><li>$33,062 in Meta-attributed online sales from $4,404 in ad spend over 15 months (December 2024 to February 2026).</li></ul></li><li><span style=\"font-weight: bold;\">Orders:</span><ul><li>338 orders at $13.03 each, with average order value up from $90.04 to $97.82.</li></ul></li><li><span style=\"font-weight: bold;\">Return on ad spend:</span><ul><li>7.51x, up from 6.92x on the previous campaign. Instagram placements returned 14.4x.</li></ul></li><li><span style=\"font-weight: bold;\">Best month:</span><ul><li>April 2025, with 44 orders and $4,735 in revenue from $299 in spend (15.8x).</li></ul></li></ol>",
+    "counters": [
+     {
+      "prefix": "",
+      "ending_number": "7.51",
+      "suffix": "×",
+      "label": "Return on Ad Spend",
+      "sub": "Meta-attributed"
+     },
+     {
+      "prefix": "",
+      "ending_number": "338",
+      "suffix": "",
+      "label": "Online Orders",
+      "sub": "in 15 months"
+     },
+     {
+      "prefix": "+",
+      "ending_number": "9",
+      "suffix": "%",
+      "label": "Average Order Value",
+      "sub": "vs previous campaign"
+     }
+    ]
+   },
+   "extra_html": "<div class=\"dcs\"><div class=\"dcs-wrap\"><div class=\"dcs-block\"><h3>The ads behind the results</h3><div class=\"dcs-ads dcs-ads-2\"><figure class=\"dcs-ad\"><img src=\"{{AD:three-springs-farm-carousel-ad.jpg}}\" alt=\"Three Springs Farm carousel ad for Complete 3 Turmeric Liquid Extract with an Order now button\" loading=\"lazy\" width=\"510\" height=\"814\"><figcaption>Carousel ad (AD4): 71 orders at 10.2x</figcaption></figure><figure class=\"dcs-ad\"><img src=\"{{AD:three-springs-farm-refreshed-ad.jpg}}\" alt=\"Three Springs Farm refreshed ad offering up to 25% off with a monthly subscription and free shipping\" loading=\"lazy\" width=\"432\" height=\"830\"><figcaption>Refreshed ad, September 2025: 18 orders at 16.5x</figcaption></figure></div></div><div class=\"dcs-block\"><h3>What changed and when</h3><ol class=\"dcs-timeline\"><li><strong>Ongoing</strong><span>Monthly budget held at $300, with daily budgets reviewed and adjusted weekly.</span></li><li><strong>Jun 2025</strong><span>Reviewed targeting, budgets and creative, and adjusted Advantage+ creative settings.</span></li><li><strong>Aug 2025</strong><span>Fixed audience targeting after a Meta audience update removed some segments, and enabled Advantage+ creative adjustments.</span></li><li><strong>Sep 2025</strong><span>Refreshed the creative with subscription-saving messaging.</span></li><li><strong>Nov 2025</strong><span>Created a 3% lookalike audience and narrowed the broad targeting.</span></li><li><strong>Feb 2026</strong><span>Moved to a new campaign that also retargets people who added to cart without buying in the previous 90 days.</span></li></ol></div><div class=\"dcs-block\"><h3>Before and after</h3><div class=\"dcs-table\"><table><thead><tr><th scope=\"col\">Metric (AUD)</th><th scope=\"col\">Previous campaign: Jul to Nov 2024</th><th scope=\"col\">Sales campaign: Dec 2024 to Feb 2026</th></tr></thead><tbody><tr><th scope=\"row\">Spend</th><td>$1,352</td><td>$4,404</td></tr><tr><th scope=\"row\">Orders</th><td>104</td><td>338</td></tr><tr><th scope=\"row\">Revenue</th><td>$9,364</td><td>$33,062</td></tr><tr><th scope=\"row\">Revenue per month</th><td>$1,873</td><td>$2,204</td></tr><tr><th scope=\"row\">Return on ad spend</th><td>6.92x</td><td>7.51x</td></tr><tr><th scope=\"row\">Cost per order</th><td>$13.00</td><td>$13.03</td></tr><tr><th scope=\"row\">Average order value</th><td>$90.04</td><td>$97.82</td></tr><tr><th scope=\"row\">Conversion rate</th><td>3.49%</td><td>3.96%</td></tr></tbody></table></div><p class=\"dcs-source\">Source: Meta Ads (via Optmyzr). Figures in AUD. Orders and revenue are attributed by Meta and can include conversions that Google Analytics credits to another visit.</p></div><div class=\"dcs-actions\"><a class=\"dcs-btn\" href=\"https://digilari.com.au/ppc-agency/\">Explore Google Ads Management <span aria-hidden=\"true\">↗</span></a><a class=\"dcs-btn dcs-btn-outline\" href=\"https://digilari.com.au/social-media-marketing-smm/instagram-ads-agency/\">Explore Instagram Ads <span aria-hidden=\"true\">↗</span></a><a class=\"dcs-link\" href=\"https://digilari.com.au/case-studies/\">All case studies <span aria-hidden=\"true\">↗</span></a></div></div></div>",
+   "ads": [
+    "three-springs-farm-carousel-ad.jpg",
+    "three-springs-farm-refreshed-ad.jpg"
+   ]
+  }
+ ]
+}
